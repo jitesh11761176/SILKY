@@ -1,12 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { Shield, Clock, Award, PenTool, ArrowRight, Star, ChevronDown, MessageCircle } from 'lucide-react';
+import { ShieldCheck, Settings, Award, Factory, ArrowRight, Star, ChevronDown, MessageCircle, Download, UserPlus } from 'lucide-react';
 import Hero from '../components/Hero';
 import Section from '../components/Section';
-import ServiceCard from '../components/ServiceCard';
 import ProductCard from '../components/ProductCard';
-import { SERVICES, PRODUCTS, TESTIMONIALS, FAQS, WHATSAPP_NUMBER, WHATSAPP_MESSAGE } from '../constants';
+import { PRODUCTS, CATEGORIES, TESTIMONIALS, FAQS, WHATSAPP_NUMBER, WHATSAPP_MESSAGE, BRAND_NAME, COMPANY_NAME } from '../constants';
 
 const Home = () => {
   const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
@@ -15,156 +14,175 @@ const Home = () => {
     <div className="overflow-hidden">
       <Hero />
 
-      {/* Services Section */}
+      {/* About Section */}
       <Section 
-        id="services"
-        title="Bespoke Design Services"
-        subtitle="What We Offer"
-        centered
+        id="about"
+        title={`About ${COMPANY_NAME}`}
+        subtitle="The Manufacturer"
       >
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {SERVICES.map((service) => (
-            <ServiceCard key={service.id} service={service} />
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="space-y-8">
+            <h3 className="text-3xl font-display font-black leading-tight">
+              A Leading Manufacturer of <span className="text-blue-600">Modular Kitchen</span> & Wardrobe Accessories
+            </h3>
+            <p className="text-zinc-600 leading-relaxed text-lg">
+              {COMPANY_NAME} is a leading manufacturer of modular kitchen and wardrobe accessories under the brand name <span className="font-bold text-zinc-900">{BRAND_NAME}</span>. Our products are manufactured using high-grade stainless steel and advanced engineering processes to ensure long life, rust resistance, and smooth operation.
+            </p>
+            <p className="text-zinc-600 leading-relaxed text-lg">
+              Our focus is to deliver reliable, durable, and efficient storage solutions that meet modern kitchen and wardrobe requirements.
+            </p>
+            <Link to="/about" className="btn-primary inline-flex">
+              Read More
+            </Link>
+          </div>
+          <div className="relative">
+            <img 
+              src="https://picsum.photos/seed/factory-interior/800/600" 
+              alt="Stylex Industries Factory" 
+              className="rounded-2xl shadow-2xl"
+              referrerPolicy="no-referrer"
+            />
+          </div>
+        </div>
+      </Section>
+
+      {/* Categories Section */}
+      <Section 
+        title="Product Categories" 
+        subtitle="Our Range"
+        centered
+        className="bg-zinc-50"
+      >
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {CATEGORIES.map((cat) => (
+            <Link 
+              key={cat.id} 
+              to={`/products?category=${cat.slug}`}
+              className="group relative h-80 rounded-2xl overflow-hidden shadow-lg"
+            >
+              <img 
+                src={cat.image} 
+                alt={cat.title} 
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                referrerPolicy="no-referrer"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/20 to-transparent"></div>
+              <div className="absolute bottom-6 left-6 right-6">
+                <h4 className="text-xl font-display font-bold text-white mb-2">{cat.title}</h4>
+                <p className="text-zinc-300 text-xs line-clamp-2 mb-4">{cat.description}</p>
+                <span className="inline-flex items-center text-blue-400 text-xs font-bold uppercase tracking-widest group-hover:translate-x-2 transition-transform">
+                  Explore <ArrowRight size={14} className="ml-2" />
+                </span>
+              </div>
+            </Link>
           ))}
         </div>
       </Section>
 
       {/* Why Choose Us */}
       <Section 
-        dark 
-        title="Why Aura Modular?" 
-        subtitle="The Aura Difference"
-        className="relative"
+        title={`Why Choose ${BRAND_NAME}?`} 
+        subtitle="The Manufacturer Advantage"
+        centered
       >
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {[
-            { icon: Shield, title: 'Premium Materials', desc: 'We use only BWP Marine Plywood and high-grade laminates.' },
-            { icon: PenTool, title: 'Expert Designers', desc: 'Our designers bring years of experience in ergonomic planning.' },
-            { icon: Award, title: 'Affordable Luxury', desc: 'Premium quality at competitive prices with transparent billing.' },
-            { icon: Clock, title: 'Fast Installation', desc: 'Efficient processes ensuring your home is ready in record time.' }
+            { icon: ShieldCheck, title: '100% Stainless Steel', desc: 'High-grade construction for lifetime durability.' },
+            { icon: ShieldCheck, title: 'Rust Proof Design', desc: 'Hygienic and resistant to kitchen environments.' },
+            { icon: Settings, title: 'Smooth Mechanism', desc: 'Precision engineered for silent operation.' },
+            { icon: Award, title: '10 Years Durability', desc: 'Long-term product reliability and support.' },
+            { icon: Factory, title: 'Trusted Manufacturer', desc: 'Stylex Industries – Quality you can trust.' },
+            { icon: Star, title: 'Wide Range', desc: 'Modular storage solutions for every need.' }
           ].map((feature, i) => (
-            <div key={i} className="space-y-4">
-              <div className="w-14 h-14 bg-primary/20 rounded-2xl flex items-center justify-center text-primary-light">
-                <feature.icon size={28} />
+            <div key={i} className="text-center space-y-4 p-6 rounded-2xl hover:bg-zinc-50 transition-colors">
+              <div className="w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mx-auto">
+                <feature.icon size={32} />
               </div>
-              <h3 className="text-xl font-serif font-bold">{feature.title}</h3>
-              <p className="text-stone-400 text-sm leading-relaxed">{feature.desc}</p>
+              <h4 className="font-display font-bold text-zinc-900">{feature.title}</h4>
+              <p className="text-xs text-zinc-500 leading-relaxed">{feature.desc}</p>
             </div>
           ))}
         </div>
       </Section>
 
-      {/* Product Showcase */}
+      {/* Featured Products */}
       <Section 
-        title="Featured Collections" 
-        subtitle="Our Masterpieces"
+        title="Featured Products" 
+        subtitle="Bestsellers"
         centered
+        className="bg-zinc-50"
       >
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {PRODUCTS.map((product) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {PRODUCTS.slice(0, 6).map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
         </div>
         <div className="mt-16 text-center">
-          <Link to="/products" className="btn-outline inline-flex items-center space-x-2">
-            <span>View All Products</span>
-            <ArrowRight size={18} />
+          <Link to="/products" className="btn-outline inline-flex">
+            View Full Catalogue
           </Link>
         </div>
       </Section>
 
-      {/* How We Work */}
-      <Section title="Our Seamless Process" subtitle="How We Work" centered className="bg-white">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
-          {/* Connector Line (Desktop) */}
-          <div className="hidden md:block absolute top-1/4 left-0 w-full h-0.5 bg-stone-100 -z-0"></div>
-          
-          {[
-            { step: '01', title: 'Consultation', desc: 'We discuss your needs and measure your space.' },
-            { step: '02', title: 'Design', desc: '3D visualizations and material selection.' },
-            { step: '03', title: 'Manufacturing', desc: 'Precision crafting in our state-of-the-art facility.' },
-            { step: '04', title: 'Installation', desc: 'Expert assembly and final quality check.' }
-          ].map((item, i) => (
-            <div key={i} className="relative z-10 text-center space-y-4">
-              <div className="w-16 h-16 bg-white border-2 border-primary rounded-full flex items-center justify-center mx-auto text-primary font-bold text-xl shadow-lg">
-                {item.step}
-              </div>
-              <h3 className="text-xl font-serif font-bold">{item.title}</h3>
-              <p className="text-stone-500 text-sm">{item.desc}</p>
-            </div>
-          ))}
-        </div>
-      </Section>
-
-      {/* Brands */}
-      <Section className="py-12 border-y border-stone-100">
-        <div className="flex flex-wrap justify-center items-center gap-12 opacity-40 grayscale hover:grayscale-0 transition-all">
-          {['Hafele', 'Hettich', 'Blum', 'Kessebohmer', 'Ebco'].map((brand) => (
-            <span key={brand} className="text-2xl font-serif font-bold text-stone-400">{brand}</span>
-          ))}
-        </div>
-      </Section>
-
-      {/* About Preview */}
-      <Section className="bg-stone-100">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div className="relative">
-            <img 
-              src="https://picsum.photos/seed/about-preview/800/800" 
-              alt="About Aura Modular" 
-              className="rounded-3xl shadow-2xl"
-              referrerPolicy="no-referrer"
-            />
-            <div className="absolute -bottom-8 -right-8 bg-primary text-white p-8 rounded-3xl hidden md:block">
-              <p className="text-4xl font-serif font-bold">15+</p>
-              <p className="text-xs uppercase tracking-widest opacity-80">Years of Excellence</p>
-            </div>
+      {/* Dealer Section */}
+      <Section className="py-0">
+        <div className="bg-zinc-900 rounded-3xl overflow-hidden relative p-12 md:p-24 text-white">
+          <div className="absolute inset-0 opacity-10">
+            <img src="https://picsum.photos/seed/dealer-bg/1200/600" className="w-full h-full object-cover" alt="" referrerPolicy="no-referrer" />
           </div>
-          <div className="space-y-8">
-            <span className="text-primary-light font-bold text-xs uppercase tracking-[0.2em]">About Us</span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold leading-tight">
-              We Don't Just Build Kitchens, We Create <span className="italic">Experiences</span>
-            </h2>
-            <p className="text-stone-600 leading-relaxed">
-              Aura Modular was founded on the principle that the heart of the home deserves the finest craftsmanship. We combine traditional values with modern technology to deliver spaces that are as functional as they are beautiful.
-            </p>
-            <Link to="/about" className="btn-primary inline-flex items-center space-x-2">
-              <span>Read Our Story</span>
-              <ArrowRight size={18} />
-            </Link>
-          </div>
-        </div>
-      </Section>
-
-      {/* Testimonials */}
-      <Section title="Client Stories" subtitle="Testimonials" centered>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {TESTIMONIALS.map((t) => (
-            <div key={t.id} className="bg-white p-10 rounded-3xl shadow-sm border border-stone-100 relative">
-              <Star className="text-accent absolute top-10 right-10" fill="currentColor" size={20} />
-              <p className="text-lg text-stone-700 italic mb-8 leading-relaxed">"{t.content}"</p>
-              <div className="flex items-center space-x-4">
-                <img src={t.image} alt={t.name} className="w-12 h-12 rounded-full object-cover" referrerPolicy="no-referrer" />
-                <div>
-                  <h4 className="font-bold text-stone-900">{t.name}</h4>
-                  <p className="text-xs text-stone-500 uppercase tracking-widest">{t.role}</p>
+          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="space-y-8">
+              <h2 className="text-4xl md:text-6xl font-display font-black leading-tight">Become a <span className="text-blue-500">{BRAND_NAME}</span> Dealer</h2>
+              <p className="text-lg text-zinc-400">Join our growing dealer network and distribute high-quality stainless steel modular kitchen and wardrobe accessories manufactured by Stylex Industries.</p>
+              <ul className="space-y-4">
+                {['Manufacturer Direct Supply', 'High Demand Product Range', 'Trusted Brand', 'Reliable Supply'].map((item, i) => (
+                  <li key={i} className="flex items-center space-x-3">
+                    <ShieldCheck className="text-blue-500" size={20} />
+                    <span className="font-bold">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="bg-white p-8 rounded-2xl text-zinc-900">
+              <h3 className="text-2xl font-display font-bold mb-6">Dealer Enquiry Form</h3>
+              <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
+                <input type="text" placeholder="Full Name" className="w-full px-4 py-3 bg-zinc-50 border border-zinc-200 rounded-lg focus:outline-none focus:border-blue-500" />
+                <input type="text" placeholder="Company Name" className="w-full px-4 py-3 bg-zinc-50 border border-zinc-200 rounded-lg focus:outline-none focus:border-blue-500" />
+                <div className="grid grid-cols-2 gap-4">
+                  <input type="text" placeholder="City" className="w-full px-4 py-3 bg-zinc-50 border border-zinc-200 rounded-lg focus:outline-none focus:border-blue-500" />
+                  <input type="tel" placeholder="Phone" className="w-full px-4 py-3 bg-zinc-50 border border-zinc-200 rounded-lg focus:outline-none focus:border-blue-500" />
                 </div>
-              </div>
+                <input type="email" placeholder="Email Address" className="w-full px-4 py-3 bg-zinc-50 border border-zinc-200 rounded-lg focus:outline-none focus:border-blue-500" />
+                <button className="w-full btn-accent">Apply Now</button>
+              </form>
             </div>
-          ))}
+          </div>
+        </div>
+      </Section>
+
+      {/* Catalogue Download */}
+      <Section title="Download Product Catalogue" subtitle="Resources" centered>
+        <div className="max-w-2xl mx-auto bg-zinc-50 p-12 rounded-3xl border border-zinc-200 text-center space-y-8">
+          <Download className="mx-auto text-blue-600" size={64} />
+          <h3 className="text-3xl font-display font-bold">Explore our complete range</h3>
+          <p className="text-zinc-500">Explore our complete range of modular kitchen and wardrobe accessories.</p>
+          <Link to="/catalogue" className="btn-primary mx-auto inline-flex items-center">
+            <Download size={20} className="mr-2" />
+            <span>Download Catalogue</span>
+          </Link>
         </div>
       </Section>
 
       {/* FAQ */}
-      <Section title="Common Questions" subtitle="FAQ" centered className="bg-white">
+      <Section title="Frequently Asked Questions" subtitle="Support" centered className="bg-zinc-50">
         <div className="max-w-3xl mx-auto space-y-4">
           {FAQS.map((faq, i) => (
-            <details key={i} className="group bg-stone-50 rounded-2xl overflow-hidden border border-stone-100">
-              <summary className="flex justify-between items-center p-6 cursor-pointer list-none font-bold text-stone-800">
+            <details key={i} className="group bg-white rounded-xl overflow-hidden border border-zinc-200">
+              <summary className="flex justify-between items-center p-6 cursor-pointer list-none font-bold text-zinc-800">
                 <span>{faq.question}</span>
                 <ChevronDown size={20} className="transition-transform group-open:rotate-180" />
               </summary>
-              <div className="px-6 pb-6 text-stone-600 text-sm leading-relaxed">
+              <div className="px-6 pb-6 text-zinc-600 text-sm leading-relaxed">
                 {faq.answer}
               </div>
             </details>
@@ -173,23 +191,20 @@ const Home = () => {
       </Section>
 
       {/* Final CTA */}
-      <Section className="py-0">
-        <div className="bg-primary rounded-[3rem] overflow-hidden relative p-12 md:p-24 text-center text-white">
-          <div className="absolute inset-0 opacity-10">
-            <img src="https://picsum.photos/seed/cta-bg/1200/600" className="w-full h-full object-cover" alt="" referrerPolicy="no-referrer" />
+      <Section className="bg-blue-600 text-white py-16">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+          <div className="text-center md:text-left">
+            <h2 className="text-3xl md:text-4xl font-display font-black mb-2">Ready to Upgrade to KELLEN?</h2>
+            <p className="text-blue-100">Contact our sales team for bulk orders and dealer pricing.</p>
           </div>
-          <div className="relative z-10 max-w-3xl mx-auto space-y-8">
-            <h2 className="text-4xl md:text-6xl font-serif font-bold">Ready to Build Your Dream Space?</h2>
-            <p className="text-lg text-stone-300">Get a free design consultation and quote from our experts today.</p>
-            <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
-              <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="bg-[#25D366] text-white px-10 py-5 rounded-full font-bold text-lg hover:bg-[#128C7E] transition-all flex items-center space-x-3 shadow-2xl">
-                <MessageCircle size={24} />
-                <span>Enquire on WhatsApp</span>
-              </a>
-              <Link to="/contact" className="bg-white text-primary px-10 py-5 rounded-full font-bold text-lg hover:bg-stone-100 transition-all">
-                Contact Us
-              </Link>
-            </div>
+          <div className="flex flex-wrap justify-center gap-4">
+            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold flex items-center space-x-2 hover:bg-blue-50 transition-all">
+              <MessageCircle size={24} />
+              <span>Enquire on WhatsApp</span>
+            </a>
+            <Link to="/contact" className="bg-zinc-900 text-white px-8 py-4 rounded-lg font-bold hover:bg-zinc-800 transition-all">
+              Contact Us
+            </Link>
           </div>
         </div>
       </Section>

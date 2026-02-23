@@ -5,11 +5,11 @@ import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
 import Home from './pages/Home';
 import About from './pages/About';
-import Services from './pages/Services';
-import ServiceDetail from './pages/ServiceDetail';
 import Products from './pages/Products';
 import ProductDetail from './pages/ProductDetail';
 import Contact from './pages/Contact';
+import BecomeDealer from './pages/BecomeDealer';
+import Catalogue from './pages/Catalogue';
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -30,10 +30,10 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/services/:slug" element={<ServiceDetail />} />
             <Route path="/products" element={<Products />} />
             <Route path="/products/:slug" element={<ProductDetail />} />
+            <Route path="/become-dealer" element={<BecomeDealer />} />
+            <Route path="/catalogue" element={<Catalogue />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>

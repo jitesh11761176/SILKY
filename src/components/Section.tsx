@@ -23,7 +23,7 @@ const Section: React.FC<SectionProps> = ({
   return (
     <section
       id={id}
-      className={`py-24 ${dark ? 'bg-stone-950 text-white' : 'bg-stone-50 text-stone-900'} ${className}`}
+      className={`py-24 ${dark ? 'bg-zinc-950 text-white' : 'bg-white text-zinc-900'} ${className}`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {(title || subtitle) && (
@@ -33,7 +33,7 @@ const Section: React.FC<SectionProps> = ({
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="text-primary-light font-bold text-xs uppercase tracking-[0.2em] mb-3 block"
+                className="text-blue-600 font-bold text-xs uppercase tracking-[0.3em] mb-4 block"
               >
                 {subtitle}
               </motion.span>
@@ -44,7 +44,7 @@ const Section: React.FC<SectionProps> = ({
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.1 }}
-                className="text-4xl md:text-5xl font-serif font-bold"
+                className="text-4xl md:text-5xl font-display font-black"
               >
                 {title}
               </motion.h2>

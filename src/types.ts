@@ -13,11 +13,20 @@ export interface Product {
   id: string;
   name: string;
   slug: string;
-  category: 'kitchen' | 'wardrobe' | 'accessory';
+  category: 'kitchen-accessories' | 'wardrobe-accessories' | 'hardware-hinges' | 'storage-systems';
   description: string;
-  priceRange: string;
-  images: string[];
   features: string[];
+  sizes: string[];
+  material: string;
+  images: string[];
+}
+
+export interface Category {
+  id: string;
+  title: string;
+  slug: string;
+  description: string;
+  image: string;
 }
 
 export interface Testimonial {
