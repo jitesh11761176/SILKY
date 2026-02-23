@@ -1,4 +1,8 @@
 import { Product, Category, Testimonial, FAQ } from './types';
+import plainBasketImg from './assets/products/plain-basket.jpg';
+import magicCornerImg from './assets/products/magic-corner.jpg';
+import bottlePulloutImg from './assets/products/bottle-pullout.jpg';
+import pantryUnitImg from './assets/products/pantry-unit.jpg';
 
 export const BRAND_NAME = 'KELLEN';
 export const COMPANY_NAME = 'Stylex Industries';
@@ -48,7 +52,7 @@ export const PRODUCTS: Product[] = [
     features: ['Rust proof', 'Strong construction', 'Long lasting durability', 'Smooth sliding mechanism'],
     sizes: ['15 × 20 × 4', '17 × 20 × 4', '21 × 20 × 4'],
     material: '100% Stainless Steel',
-    images: ['https://picsum.photos/seed/plain-basket/800/600']
+    images: [plainBasketImg]
   },
   {
     id: 'p2',
@@ -59,7 +63,7 @@ export const PRODUCTS: Product[] = [
     features: ['Space saving design', 'Easy access', 'Chrome finish', '2 or 3 shelf variants'],
     sizes: ['4x20x17', '6x20x17', '8x20x17'],
     material: '100% Stainless Steel',
-    images: ['https://picsum.photos/seed/bottle-pullout/800/600']
+    images: [bottlePulloutImg]
   },
   {
     id: 'p3',
@@ -70,7 +74,7 @@ export const PRODUCTS: Product[] = [
     features: ['Soft close mechanism', 'Heavy load capacity', 'Left/Right opening options', 'Maximum corner utilization'],
     sizes: ['33x19x22', '33x20x24'],
     material: 'Stainless Steel & High-grade Mechanism',
-    images: ['https://picsum.photos/seed/magic-corner/800/600']
+    images: [magicCornerImg]
   },
   {
     id: 'p4',
@@ -81,7 +85,7 @@ export const PRODUCTS: Product[] = [
     features: ['12 Inner + 12 Outer baskets', 'Smooth pullout action', 'Adjustable heights', 'Premium aesthetics'],
     sizes: ['15x20x48', '15x20x72', '30x20x72'],
     material: 'SS 304 Grade Steel',
-    images: ['https://picsum.photos/seed/pantry-unit/800/600']
+    images: [pantryUnitImg]
   },
   {
     id: 'p5',

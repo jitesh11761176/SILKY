@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { ArrowRight, Download, UserPlus, ShieldCheck } from 'lucide-react';
 import { BRAND_NAME } from '../constants';
+import cataloguePdf from '../assets/catalogue/catalogue.pdf';
 
 const Hero = () => {
   return (
@@ -47,10 +48,14 @@ const Hero = () => {
                 <UserPlus size={18} className="mr-2" />
                 <span>Become Dealer</span>
               </Link>
-              <Link to="/catalogue" className="w-full sm:w-auto flex items-center justify-center space-x-2 text-zinc-500 hover:text-zinc-900 font-bold py-4 px-6 transition-colors">
+              <a 
+                href={cataloguePdf} 
+                download="KELLEN_Catalogue.pdf"
+                className="w-full sm:w-auto flex items-center justify-center space-x-2 text-zinc-500 hover:text-zinc-900 font-bold py-4 px-6 transition-colors"
+              >
                 <Download size={20} />
                 <span>Download Catalogue</span>
-              </Link>
+              </a>
             </div>
 
             <div className="mt-16 grid grid-cols-3 gap-8 border-t border-zinc-200 pt-8">

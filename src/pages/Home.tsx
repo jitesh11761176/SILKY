@@ -79,22 +79,20 @@ const Home = () => {
         </div>
       </Section>
 
-      {/* Why Choose Us */}
+      {/* Why Stylex Industries */}
       <Section 
-        title={`Why Choose ${BRAND_NAME}?`} 
+        title="Why Stylex Industries" 
         subtitle="The Manufacturer Advantage"
         centered
       >
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {[
-            { icon: ShieldCheck, title: '100% Stainless Steel', desc: 'High-grade construction for lifetime durability.' },
-            { icon: ShieldCheck, title: 'Rust Proof Design', desc: 'Hygienic and resistant to kitchen environments.' },
-            { icon: Settings, title: 'Smooth Mechanism', desc: 'Precision engineered for silent operation.' },
-            { icon: Award, title: '10 Years Durability', desc: 'Long-term product reliability and support.' },
-            { icon: Factory, title: 'Trusted Manufacturer', desc: 'Stylex Industries – Quality you can trust.' },
-            { icon: Star, title: 'Wide Range', desc: 'Modular storage solutions for every need.' }
+            { icon: Factory, title: `Manufacturer of ${BRAND_NAME} brand`, desc: `Direct manufacturer supply ensuring quality and consistency.` },
+            { icon: ShieldCheck, title: '100% Stainless Steel', desc: 'High-grade austenitic steel for lifetime durability.' },
+            { icon: Award, title: 'Rust Proof Products', desc: 'Hygienic and resistant to harsh kitchen environments.' },
+            { icon: Settings, title: 'Long Durability', desc: 'Precision engineered for smooth operation and long life.' }
           ].map((feature, i) => (
-            <div key={i} className="text-center space-y-4 p-6 rounded-2xl hover:bg-zinc-50 transition-colors">
+            <div key={i} className="text-center space-y-4 p-6 rounded-2xl hover:bg-zinc-50 transition-colors border border-transparent hover:border-zinc-100">
               <div className="w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mx-auto">
                 <feature.icon size={32} />
               </div>

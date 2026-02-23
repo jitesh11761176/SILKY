@@ -2,6 +2,7 @@ import React from 'react';
 import { Download, FileText, MessageCircle } from 'lucide-react';
 import Section from '../components/Section';
 import { WHATSAPP_NUMBER, BRAND_NAME } from '../constants';
+import cataloguePdf from '../assets/catalogue/catalogue.pdf';
 
 const Catalogue = () => {
   const catalogues = [
@@ -9,19 +10,22 @@ const Catalogue = () => {
       title: 'Main Product Catalogue',
       description: 'Complete range of modular kitchen and wardrobe accessories with technical specifications.',
       size: '12.4 MB',
-      format: 'PDF'
+      format: 'PDF',
+      file: cataloguePdf
     },
     {
       title: 'Price List 2024',
       description: 'Latest MRP and dealer pricing for all KELLEN products.',
       size: '2.1 MB',
-      format: 'PDF'
+      format: 'PDF',
+      file: cataloguePdf
     },
     {
       title: 'Installation Guide',
       description: 'Step-by-step instructions for installing our baskets, pullouts, and corner units.',
       size: '5.8 MB',
-      format: 'PDF'
+      format: 'PDF',
+      file: cataloguePdf
     }
   ];
 
@@ -51,10 +55,14 @@ const Catalogue = () => {
                   <span>Format: {item.format}</span>
                   <span>Size: {item.size}</span>
                 </div>
-                <button className="w-full btn-primary flex items-center justify-center">
+                <a 
+                  href={item.file} 
+                  download={`${item.title.replace(/\s+/g, '_')}.pdf`}
+                  className="w-full btn-primary flex items-center justify-center"
+                >
                   <Download size={18} className="mr-2" />
                   <span>Download Now</span>
-                </button>
+                </a>
               </div>
             </div>
           ))}
