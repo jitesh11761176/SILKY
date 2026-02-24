@@ -19,6 +19,7 @@ export interface Product {
   sizes: string[];
   material: string;
   images: string[];
+  specifications?: Record<string, string>;
 }
 
 export interface Category {

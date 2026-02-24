@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useParams, Navigate, Link } from 'react-router-dom';
-import { MessageCircle, CheckCircle, ChevronLeft, ChevronRight, Star, ArrowRight, ShieldCheck, Ruler, Box } from 'lucide-react';
+import { MessageCircle, CheckCircle, ChevronLeft, ChevronRight, Star, ArrowRight, ShieldCheck, Ruler, Box, Settings } from 'lucide-react';
 import Section from '../components/Section';
 import { PRODUCTS, WHATSAPP_NUMBER, WHATSAPP_MESSAGE, BRAND_NAME } from '../constants';
 
@@ -105,6 +105,26 @@ const ProductDetail = () => {
               <p className="text-sm text-zinc-700 font-bold">{product.material}</p>
               <p className="text-xs text-zinc-500">Austenitic stainless steel with high corrosion resistance. Suitable for humid kitchen environments.</p>
             </div>
+
+            {product.specifications && (
+              <div className="p-6 bg-zinc-50 rounded-xl border border-zinc-200 space-y-6">
+                <div className="flex items-center justify-between">
+                  <h3 className="flex items-center space-x-2 font-bold text-zinc-900 uppercase tracking-widest text-[10px]">
+                    <Settings size={16} className="text-blue-600" />
+                    <span>Engineering Specifications</span>
+                  </h3>
+                  <span className="text-[10px] font-bold text-blue-600 bg-blue-50 px-2 py-1 rounded uppercase">Precision Grade</span>
+                </div>
+                <div className="grid grid-cols-2 gap-x-8 gap-y-6">
+                  {Object.entries(product.specifications).map(([key, value]) => (
+                    <div key={key} className="border-l-2 border-blue-100 pl-4">
+                      <dt className="text-[10px] uppercase text-zinc-400 font-bold tracking-wider mb-1">{key}</dt>
+                      <dd className="text-sm text-zinc-900 font-bold">{value}</dd>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
 
             <div className="pt-8 space-y-4">
               <a 

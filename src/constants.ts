@@ -63,7 +63,13 @@ export const PRODUCTS: Product[] = [
     features: ['100% Stainless Steel', 'Rust Proof', 'Smooth Sliding', 'Long Life Durability'],
     sizes: ['15x20x4', '17x20x4', '19x20x4', '21x20x4', '24x20x4', '27x20x4', '32x20x4', '15x20x6', '17x20x6', '19x20x6', '21x20x6', '24x20x6', '27x20x6', '32x20x6', '15x20x8', '17x20x8', '19x20x8', '21x20x8', '24x20x8', '27x20x8', '32x20x8'],
     material: '100% Stainless Steel',
-    images: [plainBasketImg]
+    images: [plainBasketImg],
+    specifications: {
+      'Material Grade': 'Austenitic Stainless Steel',
+      'Finish': 'Multi-layer Chrome Plated',
+      'Warranty': '10 Years',
+      'Mechanism': 'Smooth Sliding'
+    }
   },
   {
     id: 'plate-basket',
@@ -889,6 +895,214 @@ export const PRODUCTS: Product[] = [
     sizes: ['18"', '20"', '22"', '24"'],
     material: 'Steel',
     images: ['https://picsum.photos/seed/quodro/800/600']
+  },
+  {
+    id: 'kitchen-tandem-box',
+    name: 'Kitchen Tandem Box',
+    slug: 'kitchen-tandem-box',
+    category: 'hardware-hinges',
+    description: 'Modern drawer system for organized kitchen storage with soft-close technology.',
+    features: ['Soft Close', 'Full Extension', 'High Load Capacity', 'Elegant Design'],
+    sizes: ['4" - 500 MM'],
+    material: 'Steel (White, Grey, Dark Grey)',
+    images: ['https://picsum.photos/seed/tandem/800/600'],
+    specifications: {
+      'Load Capacity': '35 KG / 50 KG',
+      'Finish': 'Powder Coated',
+      'Cycle Test': '50,000 Cycles'
+    }
+  },
+  {
+    id: 'kitchen-tandem-box-single-gallery',
+    name: 'Kitchen Tandem Box with Single Square Gallery',
+    slug: 'kitchen-tandem-box-single-gallery',
+    category: 'hardware-hinges',
+    description: 'Tandem box with additional gallery rail for deeper drawers.',
+    features: ['Extra Stability', 'Increased Height', 'Soft Close', 'Modern Look'],
+    sizes: ['6" - 500 MM'],
+    material: 'Steel (White, Grey, Dark Grey)',
+    images: ['https://picsum.photos/seed/tandem-gallery/800/600']
+  },
+  {
+    id: 'swing-corner-decco',
+    name: 'Swing Corner Decco SC',
+    slug: 'swing-corner-decco',
+    category: 'storage-systems',
+    description: 'Efficient corner storage solution with swinging trays for easy access.',
+    features: ['Soft Close', 'Left/Right Handed', 'Maximum Space Utilization', 'Smooth Swing'],
+    sizes: ['Standard'],
+    material: 'Steel with Decco Finish',
+    images: ['https://picsum.photos/seed/swing-corner/800/600'],
+    specifications: {
+      'Mechanism': 'Soft Close Swing',
+      'Tray Type': 'Anti-slip Decco',
+      'Cabinet Width': '900 MM'
+    }
+  },
+  {
+    id: 'bed-lift-manual',
+    name: 'Bed Lift Manual',
+    slug: 'bed-lift-manual',
+    category: 'hardware-hinges',
+    description: 'Heavy-duty manual bed lift mechanism for under-bed storage access.',
+    features: ['Heavy Load Capacity', 'Smooth Operation', 'Durable Steel', 'Easy Installation'],
+    sizes: ['900 MM (60 KG)', '1500 MM (125 KG)'],
+    material: 'Steel',
+    images: ['https://picsum.photos/seed/bed-lift/800/600']
+  },
+  {
+    id: 'anti-skid-mat',
+    name: 'Anti Skid Mat Roll Dotted',
+    slug: 'anti-skid-mat',
+    category: 'miscellaneous-accessories',
+    description: 'Protective anti-skid mat for drawers and shelves to prevent items from sliding.',
+    features: ['Anti-skid Surface', 'Easy to Cut', 'Washable', 'Protects Surfaces'],
+    sizes: ['50 CM * 20 MTRSS'],
+    material: 'PVC (Grey, White, Transparent)',
+    images: ['https://picsum.photos/seed/antiskid/800/600']
+  },
+  {
+    id: 'wastebin-auto-lid',
+    name: 'Wastebin Auto Lid Swing Bin',
+    slug: 'wastebin-auto-lid',
+    category: 'miscellaneous-accessories',
+    description: 'Hygienic waste management solution with automatic lid opening.',
+    features: ['Auto Lid', 'Swing Mechanism', 'Easy to Clean', 'Compact Design'],
+    sizes: ['8 LTR', '14 LTR'],
+    material: 'Stainless Steel / Plastic',
+    images: ['https://picsum.photos/seed/wastebin/800/600']
+  },
+  {
+    id: 'rolling-shutter',
+    name: 'Kitchen Storage Rolling Shutter',
+    slug: 'rolling-shutter',
+    category: 'storage-systems',
+    description: 'Elegant vertical rolling shutter for concealing kitchen appliances and storage.',
+    features: ['Smooth Operation', 'Space Saving', 'Modern Aesthetic', 'Durable Slats'],
+    sizes: ['600 MM'],
+    material: 'SS / PVC / Glass',
+    images: ['https://picsum.photos/seed/shutter/800/600']
+  },
+  {
+    id: 'flap-lift-single',
+    name: 'Kitchen Cabinet Flap Lift Single Door',
+    slug: 'flap-lift-single',
+    category: 'hardware-hinges',
+    description: 'Overhead cabinet lift system for single doors.',
+    features: ['Soft Close', 'Stay at any position', 'Easy Adjustment', 'Silent'],
+    sizes: ['Standard'],
+    material: 'Zinc Alloy / Steel',
+    images: ['https://picsum.photos/seed/flap-lift/800/600']
+  },
+  {
+    id: 'wardrobe-cloth-lifter',
+    name: 'Wardrobe Cloth Lifter',
+    slug: 'wardrobe-cloth-lifter',
+    category: 'wardrobe-accessories',
+    description: 'Pull-down wardrobe rail for accessing high-hanging clothes.',
+    features: ['Ergonomic Design', 'High Load Capacity', 'Smooth Pull-down', 'Adjustable Width'],
+    sizes: ['Aluminium 12 KG', 'Steel 15 KG'],
+    material: 'Aluminium / Steel',
+    images: ['https://picsum.photos/seed/cloth-lifter/800/600']
+  },
+  {
+    id: 'gas-lift-brass',
+    name: 'Cabinet Lid Gas Lift (Brass Cylinder)',
+    slug: 'gas-lift-brass',
+    category: 'hardware-hinges',
+    description: 'Pneumatic support for overhead cabinet doors with brass cylinder for longevity.',
+    features: ['Brass Cylinder', 'Smooth Opening', 'Durable', 'Easy to Install'],
+    sizes: ['8 KG', '10 KG', '12 KG', '15 KG', '25 KG', '30 KG', '60 KG'],
+    material: 'Steel / Brass',
+    images: ['https://picsum.photos/seed/gas-lift/800/600']
+  },
+  {
+    id: 'furniture-leg-ss',
+    name: 'SS Adjustable Furniture Leg',
+    slug: 'furniture-leg-ss',
+    category: 'hardware-hinges',
+    description: 'Durable stainless steel legs for furniture with height adjustment.',
+    features: ['Adjustable Height', 'Stainless Steel', 'Heavy Duty', 'Rust Proof'],
+    sizes: ['50*50', '50*80', '50*100', '50*120', '50*150 MM'],
+    material: 'Stainless Steel',
+    images: ['https://picsum.photos/seed/leg-ss/800/600']
+  },
+  {
+    id: 'cutlery-tray-pvc',
+    name: 'PVC Cutlery Tray',
+    slug: 'cutlery-tray-pvc',
+    category: 'kitchen-accessories',
+    description: 'Organized cutlery insert for drawers made of high-quality PVC.',
+    features: ['Multiple Compartments', 'Easy to Clean', 'Durable PVC', 'Fits Standard Drawers'],
+    sizes: ['450 MM', '600 MM', '900 MM'],
+    material: 'PVC (White, Grey)',
+    images: ['https://picsum.photos/seed/cutlery-pvc/800/600']
+  },
+  {
+    id: 'oval-pipe-ss',
+    name: 'Oval Pipe Steel (Wardrobe Pipe)',
+    slug: 'oval-pipe-ss',
+    category: 'wardrobe-accessories',
+    description: 'Strong oval pipe for hanging clothes in wardrobes.',
+    features: ['High Load Capacity', 'Rust Resistant', 'Elegant Shape', 'Durable'],
+    sizes: ['Standard'],
+    material: 'Iron / SS (Nickal Coated)',
+    images: ['https://picsum.photos/seed/oval-pipe/800/600']
+  },
+  {
+    id: 'wooden-dowel',
+    name: 'Wooden Dowel',
+    slug: 'wooden-dowel',
+    category: 'hardware-hinges',
+    description: 'High-quality wooden dowels for furniture joint reinforcement.',
+    features: ['Strong Joint', 'Natural Wood', 'Precise Dimensions', 'Easy to Use'],
+    sizes: ['6*25', '8*40', '10*50'],
+    material: 'Wood',
+    images: ['https://picsum.photos/seed/dowel/800/600']
+  },
+  {
+    id: 'minifix-black-pvc',
+    name: 'Minifix Black PVC Coated Basic',
+    slug: 'minifix-black-pvc',
+    category: 'hardware-hinges',
+    description: 'Standard minifix connector with black PVC coating.',
+    features: ['Concealed Connection', 'Easy Assembly', 'Durable', 'Standard Fit'],
+    sizes: ['6*40'],
+    material: 'Steel / PVC',
+    images: ['https://picsum.photos/seed/minifix-pvc/800/600']
+  },
+  {
+    id: 'shelf-l-button',
+    name: 'Shelf L-Button Basic',
+    slug: 'shelf-l-button',
+    category: 'hardware-hinges',
+    description: 'Simple L-shaped support for shelves.',
+    features: ['Sturdy Support', 'Easy to Install', 'Compact', 'Durable'],
+    sizes: ['Small'],
+    material: 'Zinc Alloy',
+    images: ['https://picsum.photos/seed/l-button/800/600']
+  },
+  {
+    id: 'shelf-bullet-pin',
+    name: 'Shelf Bullet Pin',
+    slug: 'shelf-bullet-pin',
+    category: 'hardware-hinges',
+    description: 'Bullet-shaped pin for supporting adjustable shelves.',
+    features: ['Sleek Design', 'Strong Support', 'Easy to Adjust', 'Standard Fit'],
+    sizes: ['Standard'],
+    material: 'Steel',
+    images: ['https://picsum.photos/seed/bullet-pin/800/600']
+  },
+  {
+    id: 'shelf-pin-chair',
+    name: 'Shelf Pin Chair Type',
+    slug: 'shelf-pin-chair',
+    category: 'hardware-hinges',
+    description: 'Chair-shaped shelf support for increased stability.',
+    features: ['Stable Support', 'Unique Shape', 'Easy to Install', 'Durable'],
+    sizes: ['Standard'],
+    material: 'Zinc Alloy',
+    images: ['https://picsum.photos/seed/chair-pin/800/600']
   }
 ];
 
