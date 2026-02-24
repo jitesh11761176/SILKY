@@ -1,12 +1,4 @@
 import { Product, Category, Testimonial, FAQ } from './types';
-import plainBasketImg from './assets/products/plain-basket.jpg';
-import magicCornerImg from './assets/products/magic-corner.jpg';
-import bottlePulloutImg from './assets/products/bottle-pullout.jpg';
-import pantryUnitImg from './assets/products/pantry-unit.jpg';
-import cutleryBasketImg from './assets/products/cutlery-basket.jpg';
-import grainBasketImg from './assets/products/grain-basket.jpg';
-import plateBasketImg from './assets/products/plate-basket.jpg';
-import wardrobePulloutImg from './assets/products/wardrobe-pullout.jpg';
 
 export const BRAND_NAME = 'KELLEN';
 export const COMPANY_NAME = 'Stylex Industries';
@@ -61,9 +53,13 @@ export const PRODUCTS: Product[] = [
     category: 'kitchen-accessories',
     description: 'Premium stainless steel plain basket designed for modular kitchen storage. Provides durable and hygienic storage for kitchen items.',
     features: ['100% Stainless Steel', 'Rust Proof', 'Smooth Sliding', 'Long Life Durability'],
-    sizes: ['15x20x4', '17x20x4', '19x20x4', '21x20x4', '24x20x4', '27x20x4', '32x20x4', '15x20x6', '17x20x6', '19x20x6', '21x20x6', '24x20x6', '27x20x6', '32x20x6', '15x20x8', '17x20x8', '19x20x8', '21x20x8', '24x20x8', '27x20x8', '32x20x8'],
+    sizes: [
+      '12x20x4', '15x20x4', '17x20x4', '19x20x4', '21x20x4', '24x20x4', '26x20x4', '28x20x4', '30x20x4', '32x20x4',
+      '12x20x6', '15x20x6', '17x20x6', '19x20x6', '21x20x6', '24x20x6', '26x20x6', '28x20x6', '30x20x6', '32x20x6',
+      '12x20x8', '15x20x8', '17x20x8', '19x20x8', '21x20x8', '24x20x8', '26x20x8', '28x20x8', '30x20x8', '32x20x8'
+    ],
     material: '100% Stainless Steel',
-    images: [plainBasketImg],
+    images: ['/products/plain-basket.jpg'],
     specifications: {
       'Material Grade': 'Austenitic Stainless Steel',
       'Finish': 'Multi-layer Chrome Plated',
@@ -80,7 +76,23 @@ export const PRODUCTS: Product[] = [
     features: ['Organized Plate Storage', 'Rust Proof', 'Stainless Steel Construction', 'Easy to Clean'],
     sizes: ['15x20x6', '17x20x6', '19x20x6', '21x20x6'],
     material: '100% Stainless Steel',
-    images: [plateBasketImg]
+    images: ['/products/plate-basket.jpg']
+  },
+  {
+    id: 'thali-basket',
+    name: 'Thali Basket',
+    slug: 'thali-basket',
+    category: 'kitchen-accessories',
+    description: 'Heavy-duty basket specifically designed for organized storage of large plates and thalis.',
+    features: ['Thali Organization', 'Heavy Duty SS', 'Rust Proof', 'Smooth Operation'],
+    sizes: ['15x20x8', '17x20x8', '19x20x8', '21x20x8'],
+    material: '100% Stainless Steel',
+    images: ['https://picsum.photos/seed/thali/800/600'],
+    specifications: {
+      'Height': '8 Inches',
+      'Material': 'SS 304 Grade',
+      'Warranty': '10 Years'
+    }
   },
   {
     id: 'cup-saucer-basket',
@@ -102,7 +114,7 @@ export const PRODUCTS: Product[] = [
     features: ['Multiple Types (Wire/Box/Perforated)', 'Organized Storage', 'Stainless Steel', 'Durable'],
     sizes: ['15x20x4', '17x20x4', '19x20x4', '21x20x4'],
     material: '100% Stainless Steel',
-    images: [cutleryBasketImg]
+    images: ['/products/cutlery-basket.jpg']
   },
   {
     id: 'bottle-pullout',
@@ -113,7 +125,7 @@ export const PRODUCTS: Product[] = [
     features: ['Space saving design', 'Easy access', 'Chrome finish', '2 or 3 shelf variants'],
     sizes: ['4x20x17', '6x20x17', '8x20x17', '10x20x17', '4x20x21', '6x20x21', '8x20x21', '10x20x21'],
     material: '100% Stainless Steel',
-    images: [bottlePulloutImg]
+    images: ['/products/bottle-pullout.jpg']
   },
   {
     id: 'magic-corner',
@@ -124,7 +136,7 @@ export const PRODUCTS: Product[] = [
     features: ['Soft close mechanism', 'Heavy load capacity', 'Left/Right opening options', 'Maximum corner utilization'],
     sizes: ['33x19x22', '33x20x24'],
     material: 'Stainless Steel & High-grade Mechanism',
-    images: [magicCornerImg]
+    images: ['/products/magic-corner.jpg']
   },
   {
     id: 'pantry-unit',
@@ -135,7 +147,7 @@ export const PRODUCTS: Product[] = [
     features: ['12 Inner + 12 Outer baskets', 'Smooth pullout action', 'Adjustable heights', 'Premium aesthetics'],
     sizes: ['15x20x48', '15x20x72', '30x20x72', '16x20x22'],
     material: 'SS 304 Grade Steel',
-    images: [pantryUnitImg]
+    images: ['/products/pantry-unit.jpg']
   },
   {
     id: 'dish-rack',
@@ -157,7 +169,7 @@ export const PRODUCTS: Product[] = [
     features: ['Heavy Duty', 'Large Capacity', 'Stainless Steel', 'Strong Construction'],
     sizes: ['15x20x12', '17x20x12', '19x20x12', '21x20x12'],
     material: '100% Stainless Steel',
-    images: [grainBasketImg]
+    images: ['/products/grain-basket.jpg']
   },
   {
     id: 'vegetable-basket',
@@ -190,7 +202,7 @@ export const PRODUCTS: Product[] = [
     features: ['Anti-slip design', 'Telescopic slides', 'Space efficient', 'Durable finish'],
     sizes: ['24x20x4', '28x20x4', '32x20x4', '24x20x8', '28x20x8', '32x20x8'],
     material: 'Stainless Steel with Soft Close Channels',
-    images: [wardrobePulloutImg]
+    images: ['/products/wardrobe-pullout.jpg']
   },
   {
     id: 'hinges',
@@ -1103,6 +1115,82 @@ export const PRODUCTS: Product[] = [
     sizes: ['Standard'],
     material: 'Zinc Alloy',
     images: ['https://picsum.photos/seed/chair-pin/800/600']
+  },
+  {
+    id: 'grain-trolley-mechanism',
+    name: 'Grain Trolley with Mechanism',
+    slug: 'grain-trolley-mechanism',
+    category: 'kitchen-accessories',
+    description: 'Heavy-duty grain storage trolley with smooth sliding mechanism for easy access to large containers.',
+    features: ['Heavy Load Capacity', 'Smooth Sliding', 'Stainless Steel', 'Height 14"'],
+    sizes: ['15x20x14', '17x20x14', '19x20x14', '21x20x14'],
+    material: '100% Stainless Steel',
+    images: ['https://picsum.photos/seed/grain-trolley/800/600'],
+    specifications: {
+      'Height': '14 Inches',
+      'Mechanism': 'Heavy Duty Slides',
+      'Material': 'SS 304'
+    }
+  },
+  {
+    id: 'bin-holder',
+    name: 'Bin Holder',
+    slug: 'bin-holder',
+    category: 'miscellaneous-accessories',
+    description: 'Sturdy holder for kitchen waste bins, keeping them organized and accessible.',
+    features: ['Sturdy Construction', 'Easy to Install', 'Space Efficient', 'Durable'],
+    sizes: ['10 Dia'],
+    material: 'Stainless Steel',
+    images: ['https://picsum.photos/seed/bin-holder/800/600']
+  },
+  {
+    id: 'detergent-holder',
+    name: 'Detergent Holder',
+    slug: 'detergent-holder',
+    category: 'miscellaneous-accessories',
+    description: 'Compact holder for detergents and cleaning supplies, perfect for under-sink storage.',
+    features: ['Compact Design', 'Rust Proof', 'Easy to Mount', 'Organized Storage'],
+    sizes: ['12x6x12'],
+    material: 'Stainless Steel',
+    images: ['https://picsum.photos/seed/detergent-holder/800/600']
+  },
+  {
+    id: 'd-tray',
+    name: 'D-Tray',
+    slug: 'd-tray',
+    category: 'kitchen-accessories',
+    description: 'D-shaped rotating tray for corner cabinets, maximizing storage space.',
+    features: ['Rotating Design', 'Space Efficient', 'Stainless Steel Wire', 'Smooth Motion'],
+    sizes: ['18 Dia', '21 Dia', '24 Dia', '27 Dia', '30 Dia'],
+    material: 'Stainless Steel',
+    images: ['https://picsum.photos/seed/d-tray/800/600']
+  },
+  {
+    id: 'cylinder-trolley',
+    name: 'Cylinder Trolley',
+    slug: 'cylinder-trolley',
+    category: 'miscellaneous-accessories',
+    description: 'Heavy-duty trolley with wheels for easy movement of gas cylinders.',
+    features: ['Heavy Duty Wheels', 'Strong Construction', 'Rust Proof', 'Easy Movement'],
+    sizes: ['12 Dia'],
+    material: 'Stainless Steel',
+    images: ['https://picsum.photos/seed/cylinder-trolley/800/600']
+  },
+  {
+    id: 'universal-magic-corner',
+    name: 'Universal Magic Corner',
+    slug: 'universal-magic-corner',
+    category: 'storage-systems',
+    description: 'Premium universal corner solution that fits most standard corner cabinets.',
+    features: ['Universal Fit', 'Soft Close', 'Heavy Load', 'Maximum Access'],
+    sizes: ['33x20x24'],
+    material: 'Stainless Steel & Premium Mechanism',
+    images: ['https://picsum.photos/seed/universal-magic/800/600'],
+    specifications: {
+      'Mechanism': 'Soft Close',
+      'Cabinet Width': '900-1050 MM',
+      'Load Capacity': '30 KG'
+    }
   }
 ];
 
