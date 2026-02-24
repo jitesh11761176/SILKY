@@ -13,35 +13,35 @@ export const CATEGORIES: Category[] = [
     title: 'Kitchen Accessories',
     slug: 'kitchen-accessories',
     description: 'Premium stainless steel baskets, pullouts, and corner units for efficient kitchen storage.',
-    image: 'https://picsum.photos/seed/kellen-kitchen/800/600'
+    image: '/products/plain-basket.jpg'
   },
   {
     id: 'wardrobe-accessories',
     title: 'Wardrobe Accessories',
     slug: 'wardrobe-accessories',
     description: 'Elegant pullouts and hangers for modern wardrobe systems.',
-    image: 'https://picsum.photos/seed/kellen-wardrobe/800/600'
+    image: '/products/wardrobe-pullout.jpg'
   },
   {
     id: 'hardware-hinges',
     title: 'Hardware & Hinges',
     slug: 'hardware-hinges',
     description: 'Precision engineered hinges, tandem boxes, and telescopic channels.',
-    image: 'https://picsum.photos/seed/kellen-hardware/800/600'
+    image: '/products/hinges.jpg'
   },
   {
     id: 'storage-systems',
     title: 'Storage Systems',
     slug: 'storage-systems',
     description: 'Smart pantry units, tall units, and corner solutions for maximum space.',
-    image: 'https://picsum.photos/seed/kellen-storage/800/600'
+    image: '/products/pantry-unit.jpg'
   },
   {
     id: 'miscellaneous-accessories',
     title: 'Miscellaneous Accessories',
     slug: 'miscellaneous-accessories',
     description: 'Essential kitchen utilities, stands, and racks for a complete modular experience.',
-    image: 'https://picsum.photos/seed/kellen-misc/800/600'
+    image: '/products/cylinder-trolley.jpg'
   }
 ];
 
@@ -87,7 +87,7 @@ export const PRODUCTS: Product[] = [
     features: ['Thali Organization', 'Heavy Duty SS', 'Rust Proof', 'Smooth Operation'],
     sizes: ['15x20x8', '17x20x8', '19x20x8', '21x20x8'],
     material: '100% Stainless Steel',
-    images: ['https://picsum.photos/seed/thali/800/600'],
+    images: ['/products/thali-basket.jpg'],
     specifications: {
       'Height': '8 Inches',
       'Material': 'SS 304 Grade',
@@ -103,7 +103,7 @@ export const PRODUCTS: Product[] = [
     features: ['Dedicated Cup/Saucer Slots', 'Stainless Steel', 'Rust Proof', 'Space Efficient'],
     sizes: ['15x20x4', '17x20x4', '19x20x4', '21x20x4'],
     material: '100% Stainless Steel',
-    images: ['https://picsum.photos/seed/cup-saucer/800/600']
+    images: ['/products/cup-saucer-basket.jpg']
   },
   {
     id: 'cutlery-basket',
@@ -158,7 +158,7 @@ export const PRODUCTS: Product[] = [
     features: ['Drip tray included', 'Corrosion resistant', 'Sturdy wire design', 'Easy to clean'],
     sizes: ['24x10', '26x10', '28x10', '30x10', '32x10', '34x10', '36x10'],
     material: '100% Stainless Steel',
-    images: ['https://picsum.photos/seed/dish-rack/800/600']
+    images: ['/products/dish-rack.jpg']
   },
   {
     id: 'grain-basket',
@@ -180,7 +180,7 @@ export const PRODUCTS: Product[] = [
     features: ['Ventilated Design', 'Stainless Steel', 'Rust Proof', 'Easy Access'],
     sizes: ['15x20x4', '17x20x4', '21x20x4', '15x20x6', '17x20x6', '21x20x6', '15x20x8', '17x20x8', '21x20x8'],
     material: '100% Stainless Steel',
-    images: ['https://picsum.photos/seed/vegetable-basket/800/600']
+    images: ['/products/vegetable-basket.jpg']
   },
   {
     id: 'masala-pullout',
@@ -191,7 +191,7 @@ export const PRODUCTS: Product[] = [
     features: ['Spice Jar Organization', 'Slim Design', 'Stainless Steel', 'Smooth Operation'],
     sizes: ['4x20x21', '6x20x21', '8x20x21', '10x20x21'],
     material: '100% Stainless Steel',
-    images: ['https://picsum.photos/seed/masala-pullout/800/600']
+    images: ['/products/masala-pullout.jpg']
   },
   {
     id: 'wardrobe-accessories',
@@ -213,7 +213,7 @@ export const PRODUCTS: Product[] = [
     features: ['Soft close', 'Clip-on mechanism', 'Corrosion resistant', 'Tested for 50,000 cycles'],
     sizes: ['0 Crank', '8 Crank', '15 Crank', '135 Degree', '165 Degree'],
     material: 'Stainless Steel / Nickel Plated',
-    images: ['https://picsum.photos/seed/hinges/800/600']
+    images: ['/products/hinges.jpg']
   },
   {
     id: 'tandem-box',
@@ -224,7 +224,7 @@ export const PRODUCTS: Product[] = [
     features: ['Soft close', 'Full extension', 'High load capacity', 'Available in various heights'],
     sizes: ['4 inch', '6 inch', '8 inch'],
     material: 'Steel & High-grade Mechanism',
-    images: ['https://picsum.photos/seed/tandem-box/800/600']
+    images: ['/products/tandem-box.jpg']
   },
   {
     id: 'carrousel-unit',
@@ -235,7 +235,7 @@ export const PRODUCTS: Product[] = [
     features: ['270 Degree Rotation', 'Heavy Load Capacity', 'Stainless Steel Wire', 'Smooth Motion'],
     sizes: ['18 Dia', '21 Dia', '24 Dia', '27 Dia', '30 Dia'],
     material: 'Stainless Steel',
-    images: ['https://picsum.photos/seed/carrousel/800/600']
+    images: ['/products/carrousel-unit.jpg']
   },
   {
     id: 'dee-tray',
@@ -246,7 +246,7 @@ export const PRODUCTS: Product[] = [
     features: ['180 Degree Rotation', 'Space Efficient', 'Stainless Steel', 'Easy Installation'],
     sizes: ['18 Dia', '21 Dia', '24 Dia', '27 Dia', '30 Dia'],
     material: 'Stainless Steel',
-    images: ['https://picsum.photos/seed/dee-tray/800/600']
+    images: ['/products/dee-tray.jpg']
   },
   {
     id: 'removable-cutlery',
@@ -257,7 +257,7 @@ export const PRODUCTS: Product[] = [
     features: ['Removable Trays', 'Stainless Steel', 'Hygienic', 'Durable'],
     sizes: ['15x20x4', '17x20x4', '21x20x4'],
     material: 'Stainless Steel',
-    images: ['https://picsum.photos/seed/removable-cutlery/800/600']
+    images: ['/products/removable-cutlery.jpg']
   },
   {
     id: 'large-utensils',
@@ -268,7 +268,7 @@ export const PRODUCTS: Product[] = [
     features: ['Heavy Duty', 'Large Capacity', 'Stainless Steel', 'Strong Construction'],
     sizes: ['24x20x4', '26x20x4', '28x20x4', '30x20x4'],
     material: 'Stainless Steel',
-    images: ['https://picsum.photos/seed/large-utensils/800/600']
+    images: ['/products/large-utensils.jpg']
   },
   {
     id: 'tall-unit',
@@ -279,7 +279,7 @@ export const PRODUCTS: Product[] = [
     features: ['Maximum Storage', 'Smooth Pullout', 'Adjustable Shelves', 'Premium Finish'],
     sizes: ['15x20x48', '15x20x72'],
     material: 'Stainless Steel',
-    images: ['https://picsum.photos/seed/tall-unit/800/600']
+    images: ['/products/tall-unit.jpg']
   },
   {
     id: 'double-pantry',
@@ -290,7 +290,7 @@ export const PRODUCTS: Product[] = [
     features: ['Double Door Access', 'Massive Capacity', 'Smooth Mechanism', 'Stainless Steel Baskets'],
     sizes: ['15x20x48', '15x20x72', '30x20x72'],
     material: 'Stainless Steel',
-    images: ['https://picsum.photos/seed/double-pantry/800/600']
+    images: ['/products/double-pantry.jpg']
   },
   {
     id: 'mini-pantry',
@@ -301,7 +301,7 @@ export const PRODUCTS: Product[] = [
     features: ['Space Saving', 'Efficient Storage', 'Stainless Steel', 'Smooth Action'],
     sizes: ['16x20x22'],
     material: 'Stainless Steel',
-    images: ['https://picsum.photos/seed/mini-pantry/800/600']
+    images: ['/products/mini-pantry.jpg']
   },
   {
     id: 'side-saree-pullout',
@@ -312,7 +312,7 @@ export const PRODUCTS: Product[] = [
     features: ['Crease-free Storage', 'Easy Access', 'Stainless Steel', 'Smooth Slides'],
     sizes: ['15x20x6'],
     material: 'Stainless Steel',
-    images: ['https://picsum.photos/seed/saree-pullout/800/600']
+    images: ['/products/side-saree-pullout.jpg']
   },
   {
     id: 'shoe-rack-pullout',
@@ -323,7 +323,7 @@ export const PRODUCTS: Product[] = [
     features: ['Ventilated Design', 'Large Capacity', 'Stainless Steel', 'Smooth Operation'],
     sizes: ['24x20x8', '28x20x8', '32x20x8'],
     material: 'Stainless Steel',
-    images: ['https://picsum.photos/seed/shoe-rack/800/600']
+    images: ['/products/shoe-rack-pullout.jpg']
   },
   {
     id: 'cylinder-trolley',
@@ -334,7 +334,7 @@ export const PRODUCTS: Product[] = [
     features: ['Heavy Duty Wheels', 'Stainless Steel', 'Rust Proof', 'Easy Movement'],
     sizes: ['Standard'],
     material: 'Stainless Steel',
-    images: ['https://picsum.photos/seed/cylinder-trolley/800/600']
+    images: ['/products/cylinder-trolley.jpg']
   },
   {
     id: 'water-filter-stand',
@@ -345,7 +345,7 @@ export const PRODUCTS: Product[] = [
     features: ['Sturdy Construction', 'Stainless Steel', 'Rust Proof', 'Space Saving'],
     sizes: ['15x8x14'],
     material: 'Stainless Steel',
-    images: ['https://picsum.photos/seed/filter-stand/800/600']
+    images: ['/products/water-filter-stand.jpg']
   },
   {
     id: 'partition-basket',
@@ -356,7 +356,7 @@ export const PRODUCTS: Product[] = [
     features: ['Organized Partitions', 'Stainless Steel', 'Rust Proof', 'Durable'],
     sizes: ['15x20x4', '17x20x4', '21x20x4', '15x20x6', '17x20x6', '21x20x6', '15x20x8', '17x20x8', '21x20x8'],
     material: 'Stainless Steel',
-    images: ['https://picsum.photos/seed/partition-basket/800/600']
+    images: ['/products/partition-basket.jpg']
   },
   {
     id: 'perforated-cutlery',
@@ -367,7 +367,7 @@ export const PRODUCTS: Product[] = [
     features: ['Perforated Design', 'Stainless Steel', 'Easy Drainage', 'Rust Proof'],
     sizes: ['15x20x4', '17x20x4', '21x20x4'],
     material: 'Stainless Steel',
-    images: ['https://picsum.photos/seed/perforated-cutlery/800/600']
+    images: ['/products/perforated-cutlery.jpg']
   },
   {
     id: 'full-round-360',
@@ -378,7 +378,7 @@ export const PRODUCTS: Product[] = [
     features: ['360 Degree Rotation', 'Maximum Access', 'Stainless Steel', 'Smooth Motion'],
     sizes: ['18 Dia', '21 Dia', '24 Dia', '27 Dia', '30 Dia'],
     material: 'Stainless Steel',
-    images: ['https://picsum.photos/seed/full-round/800/600']
+    images: ['/products/full-round-360.jpg']
   },
   {
     id: 'detergent-holder',
@@ -389,7 +389,7 @@ export const PRODUCTS: Product[] = [
     features: ['Organized Storage', 'Corrosion Resistant', 'Stainless Steel', 'Easy to Install'],
     sizes: ['12x6x16'],
     material: 'Stainless Steel',
-    images: ['https://picsum.photos/seed/detergent-holder/800/600']
+    images: ['/products/detergent-holder.jpg']
   },
   {
     id: 'bin-holder',
@@ -400,7 +400,7 @@ export const PRODUCTS: Product[] = [
     features: ['Sturdy Design', 'Stainless Steel', 'Easy Access', 'Hygienic'],
     sizes: ['10 Dia'],
     material: 'Stainless Steel',
-    images: ['https://picsum.photos/seed/bin-holder/800/600']
+    images: ['/products/bin-holder.jpg']
   },
   {
     id: 'glass-tray-plate-tray',
@@ -411,7 +411,7 @@ export const PRODUCTS: Product[] = [
     features: ['Dual Storage', 'Stainless Steel', 'Rust Proof', 'Space Saving'],
     sizes: ['24x10', '26x10', '28x10', '30x10', '32x10', '34x10', '36x10'],
     material: 'Stainless Steel',
-    images: ['https://picsum.photos/seed/glass-plate-tray/800/600']
+    images: ['/products/glass-tray-plate-tray.jpg']
   },
   {
     id: 'sink-basket',
@@ -422,7 +422,7 @@ export const PRODUCTS: Product[] = [
     features: ['Water Resistant', 'Stainless Steel', 'Easy Drainage', 'Durable'],
     sizes: ['16x12x10'],
     material: 'Stainless Steel',
-    images: ['https://picsum.photos/seed/sink-basket/800/600']
+    images: ['/products/sink-basket.jpg']
   },
   {
     id: 'hanging-cup-saucer',
@@ -433,7 +433,7 @@ export const PRODUCTS: Product[] = [
     features: ['Hanging Design', 'Space Saving', 'Stainless Steel', 'Easy Access'],
     sizes: ['15x6x12'],
     material: 'Stainless Steel',
-    images: ['https://picsum.photos/seed/hanging-cup/800/600']
+    images: ['/products/hanging-cup-saucer.jpg']
   },
   {
     id: 'basket-below-sink',
@@ -444,7 +444,7 @@ export const PRODUCTS: Product[] = [
     features: ['Under-sink Storage', 'Stainless Steel', 'Rust Proof', 'Large Capacity'],
     sizes: ['32x20x6'],
     material: 'Stainless Steel',
-    images: ['https://picsum.photos/seed/below-sink/800/600']
+    images: ['/products/basket-below-sink.jpg']
   },
   {
     id: 'use-me-bin',
@@ -455,7 +455,7 @@ export const PRODUCTS: Product[] = [
     features: ['Stainless Steel', 'Hygienic', 'Durable', 'Sleek Design'],
     sizes: ['12 Dia'],
     material: 'Stainless Steel',
-    images: ['https://picsum.photos/seed/use-me-bin/800/600']
+    images: ['/products/use-me-bin.jpg']
   },
   {
     id: 'single-pantry',
@@ -466,7 +466,7 @@ export const PRODUCTS: Product[] = [
     features: ['Organized Storage', 'Smooth Pullout', 'Stainless Steel Baskets', 'Premium Finish'],
     sizes: ['15x20x48', '15x20x72'],
     material: 'Stainless Steel',
-    images: ['https://picsum.photos/seed/single-pantry/800/600']
+    images: ['/products/single-pantry.jpg']
   },
   {
     id: 'shelf-coat-hanger',
@@ -477,7 +477,7 @@ export const PRODUCTS: Product[] = [
     features: ['Dual Function', 'Stainless Steel', 'Sturdy Rod', 'Easy Installation'],
     sizes: ['24x20x6', '30x20x6', '36x20x6'],
     material: 'Stainless Steel',
-    images: ['https://picsum.photos/seed/coat-hanger/800/600']
+    images: ['/products/shelf-coat-hanger.jpg']
   },
   {
     id: 'trouser-pullout',
@@ -488,7 +488,7 @@ export const PRODUCTS: Product[] = [
     features: ['Trouser Organization', 'Stainless Steel', 'Smooth Slides', 'Space Efficient'],
     sizes: ['24x20x12', '30x20x12', '36x20x12'],
     material: 'Stainless Steel',
-    images: ['https://picsum.photos/seed/trouser-pullout/800/600']
+    images: ['/products/trouser-pullout.jpg']
   },
   {
     id: 'multipurpose-shelf',
@@ -499,7 +499,7 @@ export const PRODUCTS: Product[] = [
     features: ['Versatile Use', 'Stainless Steel', 'Durable', 'Easy to Clean'],
     sizes: ['24x20', '30x20', '36x20'],
     material: 'Stainless Steel',
-    images: ['https://picsum.photos/seed/wardrobe-shelf/800/600']
+    images: ['/products/multipurpose-shelf.jpg']
   },
   {
     id: 'cloth-rack',
@@ -510,7 +510,7 @@ export const PRODUCTS: Product[] = [
     features: ['Sturdy Construction', 'Stainless Steel', 'Rust Proof', 'Easy Access'],
     sizes: ['24x20x6', '30x20x6', '36x20x6'],
     material: 'Stainless Steel',
-    images: ['https://picsum.photos/seed/cloth-rack/800/600']
+    images: ['/products/cloth-rack.jpg']
   },
   {
     id: 'trouser-rack',
@@ -521,7 +521,7 @@ export const PRODUCTS: Product[] = [
     features: ['Crease-free Storage', 'Stainless Steel', 'Smooth Slides', 'Durable'],
     sizes: ['24x20x4', '30x20x4', '36x20x4'],
     material: 'Stainless Steel',
-    images: ['https://picsum.photos/seed/trouser-rack/800/600']
+    images: ['/products/trouser-rack.jpg']
   },
   {
     id: 'tie-holder',
@@ -532,7 +532,7 @@ export const PRODUCTS: Product[] = [
     features: ['Slim Design', 'Stainless Steel', 'Easy Access', 'Organized'],
     sizes: ['4x20x4'],
     material: 'Stainless Steel',
-    images: ['https://picsum.photos/seed/tie-holder/800/600']
+    images: ['/products/tie-holder.jpg']
   },
   {
     id: 'belt-holder',
@@ -543,7 +543,7 @@ export const PRODUCTS: Product[] = [
     features: ['Slim Design', 'Stainless Steel', 'Easy Access', 'Organized'],
     sizes: ['4x20x4'],
     material: 'Stainless Steel',
-    images: ['https://picsum.photos/seed/belt-holder/800/600']
+    images: ['/products/belt-holder.jpg']
   },
   {
     id: 'shoe-rack',
@@ -554,7 +554,7 @@ export const PRODUCTS: Product[] = [
     features: ['Ventilated', 'Stainless Steel', 'Durable', 'Easy to Clean'],
     sizes: ['24x20x6', '30x20x6', '36x20x6'],
     material: 'Stainless Steel',
-    images: ['https://picsum.photos/seed/shoe-rack-wardrobe/800/600']
+    images: ['/products/shoe-rack.jpg']
   },
   {
     id: 'hanger-pullout',
@@ -565,7 +565,7 @@ export const PRODUCTS: Product[] = [
     features: ['Top Mounted', 'Space Saving', 'Stainless Steel', 'Smooth Action'],
     sizes: ['4x20x6'],
     material: 'Stainless Steel',
-    images: ['https://picsum.photos/seed/hanger-pullout/800/600']
+    images: ['/products/hanger-pullout.jpg']
   },
   {
     id: 'fruit-baskets',
@@ -576,7 +576,7 @@ export const PRODUCTS: Product[] = [
     features: ['Elegant Design', 'Stainless Steel', 'Ventilated', 'Rust Proof'],
     sizes: ['Standard'],
     material: 'Stainless Steel',
-    images: ['https://picsum.photos/seed/fruit-basket/800/600']
+    images: ['/products/fruit-baskets.jpg']
   },
   {
     id: 'pylon-stand',
@@ -587,7 +587,7 @@ export const PRODUCTS: Product[] = [
     features: ['Multi-tier', 'Stainless Steel', 'Sturdy', 'Space Saving'],
     sizes: ['18 H', '21 H', '24 H', '27 H'],
     material: 'Stainless Steel',
-    images: ['https://picsum.photos/seed/pylon-stand/800/600']
+    images: ['/products/pylon-stand.jpg']
   },
   {
     id: 'multipurpose-rack',
@@ -598,7 +598,7 @@ export const PRODUCTS: Product[] = [
     features: ['Versatile', 'Stainless Steel', 'Rust Proof', 'Easy to Install'],
     sizes: ['12x6x10', '15x6x10', '18x6x10', '12x6x16', '15x6x16', '18x6x16'],
     material: 'Stainless Steel',
-    images: ['https://picsum.photos/seed/misc-rack/800/600']
+    images: ['/products/multipurpose-rack.jpg']
   },
   {
     id: 'towel-rack-detail',
@@ -609,7 +609,7 @@ export const PRODUCTS: Product[] = [
     features: ['Corrosion Resistant', 'Sleek Design', 'Stainless Steel', 'Easy to Clean'],
     sizes: ['24x10x4'],
     material: 'Stainless Steel',
-    images: ['https://picsum.photos/seed/towel-rack/800/600']
+    images: ['/products/towel-rack.jpg']
   },
   {
     id: 'hinge-135',
@@ -620,7 +620,7 @@ export const PRODUCTS: Product[] = [
     features: ['135 Degree Opening', 'Stainless Steel', 'Durable', 'Smooth Operation'],
     sizes: ['Standard'],
     material: 'Stainless Steel',
-    images: ['https://picsum.photos/seed/hinge-135/800/600']
+    images: ['/products/hinge-135.jpg']
   },
   {
     id: 'hinge-3d-clip-on',
@@ -631,7 +631,7 @@ export const PRODUCTS: Product[] = [
     features: ['3D Adjustment', 'Hydraulic Soft Close', 'Clip-on Mechanism', 'Stainless Steel'],
     sizes: ['Standard'],
     material: 'Stainless Steel',
-    images: ['https://picsum.photos/seed/hinge-3d/800/600']
+    images: ['/products/hinge-3d-clip-on.jpg']
   },
   {
     id: 'hinge-concealed-sos',
@@ -642,7 +642,7 @@ export const PRODUCTS: Product[] = [
     features: ['Concealed Design', 'Zinc Alloy', 'Sturdy', 'Sleek Finish'],
     sizes: ['13x45', '13x60', '16x70', '16x90', '25x118'],
     material: 'Zinc Alloy',
-    images: ['https://picsum.photos/seed/hinge-sos/800/600']
+    images: ['/products/hinge-concealed-sos.jpg']
   },
   {
     id: 'hinge-165',
@@ -653,7 +653,7 @@ export const PRODUCTS: Product[] = [
     features: ['165 Degree Opening', 'Hydraulic Soft Close', 'Stainless Steel', 'Heavy Duty'],
     sizes: ['Standard'],
     material: 'Stainless Steel',
-    images: ['https://picsum.photos/seed/hinge-165/800/600']
+    images: ['/products/hinge-165.jpg']
   },
   {
     id: 'hinge-led-light',
@@ -664,7 +664,7 @@ export const PRODUCTS: Product[] = [
     features: ['Automatic On/Off', 'Easy Clip-on', 'Battery Operated', 'Bright LED'],
     sizes: ['Standard'],
     material: 'PVC & Electronics',
-    images: ['https://picsum.photos/seed/hinge-led/800/600']
+    images: ['/products/hinge-led-light.jpg']
   },
   {
     id: 'hinge-90',
@@ -675,7 +675,7 @@ export const PRODUCTS: Product[] = [
     features: ['90 Degree Opening', 'Hydraulic Soft Close', 'Stainless Steel', 'Durable'],
     sizes: ['Standard'],
     material: 'Stainless Steel',
-    images: ['https://picsum.photos/seed/hinge-90/800/600']
+    images: ['/products/hinge-90.jpg']
   },
   {
     id: 'elevator-pullout-ss',
@@ -686,7 +686,7 @@ export const PRODUCTS: Product[] = [
     features: ['Pull-down Mechanism', 'Adjustable Height', 'Stainless Steel Basket', 'Smooth Action'],
     sizes: ['600mm', '900mm'],
     material: 'Stainless Steel & High-grade Mechanism',
-    images: ['https://picsum.photos/seed/elevator-ss/800/600']
+    images: ['/products/elevator-pullout-ss.jpg']
   },
   {
     id: 'wastebin-auto-lid',
@@ -697,7 +697,7 @@ export const PRODUCTS: Product[] = [
     features: ['Automatic Lid', 'Swing-out Design', 'Hygienic', 'Durable'],
     sizes: ['8 Ltr', '14 Ltr'],
     material: 'Stainless Steel & PVC',
-    images: ['https://picsum.photos/seed/wastebin-auto/800/600']
+    images: ['/products/wastebin-auto-lid.jpg']
   },
   {
     id: 'rolling-shutter',
@@ -708,7 +708,7 @@ export const PRODUCTS: Product[] = [
     features: ['Smooth Rolling', 'Space Saving', 'Premium Finish', 'Durable'],
     sizes: ['600mm'],
     material: 'SS / PVC / Glass',
-    images: ['https://picsum.photos/seed/rolling-shutter/800/600']
+    images: ['/products/rolling-shutter.jpg']
   },
   {
     id: 'flap-lift',
@@ -716,10 +716,10 @@ export const PRODUCTS: Product[] = [
     slug: 'flap-lift',
     category: 'hardware-hinges',
     description: 'Lift-up mechanism for overhead cabinet doors.',
-    features: ['Smooth Lift', 'Soft Close', 'Single/Double Door Options', 'Durable'],
+    features: ['Smooth Lift', 'Soft Close', 'Single/Door Options', 'Durable'],
     sizes: ['Standard'],
     material: 'Steel & High-grade Mechanism',
-    images: ['https://picsum.photos/seed/flap-lift/800/600']
+    images: ['/products/flap-lift.jpg']
   },
   {
     id: 'cloth-lifter',
@@ -730,7 +730,7 @@ export const PRODUCTS: Product[] = [
     features: ['Pull-down Action', 'Heavy Load Capacity', 'Adjustable Width', 'Smooth Operation'],
     sizes: ['12 KG Capacity', '15 KG Capacity'],
     material: 'Aluminium / Steel',
-    images: ['https://picsum.photos/seed/cloth-lifter/800/600']
+    images: ['/products/cloth-lifter.jpg']
   },
   {
     id: 'gas-lift',
@@ -741,7 +741,7 @@ export const PRODUCTS: Product[] = [
     features: ['Smooth Opening', 'Brass Cylinder', 'Various Load Capacities', 'Durable'],
     sizes: ['8kg', '10kg', '12kg', '15kg', '25kg', '30kg', '60kg'],
     material: 'Steel & Brass',
-    images: ['https://picsum.photos/seed/gas-lift/800/600']
+    images: ['/products/gas-lift.jpg']
   },
   {
     id: 'furniture-leg-ss',
@@ -752,7 +752,7 @@ export const PRODUCTS: Product[] = [
     features: ['Adjustable Height', 'Stainless Steel', 'Heavy Duty', 'Rust Proof'],
     sizes: ['50x50', '50x80', '50x100', '50x120', '50x150'],
     material: 'Stainless Steel',
-    images: ['https://picsum.photos/seed/leg-ss/800/600']
+    images: ['/products/furniture-leg-ss.jpg']
   },
   {
     id: 'cutlery-tray-pvc',
@@ -763,7 +763,7 @@ export const PRODUCTS: Product[] = [
     features: ['Organized Slots', 'Durable PVC', 'Easy to Clean', 'Various Sizes'],
     sizes: ['450mm', '600mm', '900mm'],
     material: 'PVC',
-    images: ['https://picsum.photos/seed/cutlery-pvc/800/600']
+    images: ['/products/cutlery-tray-pvc.jpg']
   },
   {
     id: 'cutlery-tray-ss',
@@ -774,7 +774,7 @@ export const PRODUCTS: Product[] = [
     features: ['Stainless Steel', 'Hygienic', 'Rust Proof', 'Sleek Design'],
     sizes: ['450mm', '600mm', '900mm'],
     material: 'Stainless Steel',
-    images: ['https://picsum.photos/seed/cutlery-ss/800/600']
+    images: ['/products/cutlery-tray-ss.jpg']
   },
   {
     id: 'cutlery-tray-wooden',
@@ -785,7 +785,7 @@ export const PRODUCTS: Product[] = [
     features: ['Natural Wood', 'Premium Look', 'Organized Slots', 'Durable'],
     sizes: ['450mm', '600mm', '900mm'],
     material: 'Wood',
-    images: ['https://picsum.photos/seed/cutlery-wood/800/600']
+    images: ['/products/cutlery-tray-wooden.jpg']
   },
   {
     id: 'track-wheel-303',
@@ -796,7 +796,7 @@ export const PRODUCTS: Product[] = [
     features: ['Smooth Sliding', 'Durable PVC', 'Easy Installation', 'Standard Fit'],
     sizes: ['Standard'],
     material: 'PVC & Steel',
-    images: ['https://picsum.photos/seed/wheel-303/800/600']
+    images: ['/products/track-wheel-303.jpg']
   },
   {
     id: 'track-wheel-382',
@@ -807,7 +807,7 @@ export const PRODUCTS: Product[] = [
     features: ['Heavy Duty', 'Smooth Motion', 'Double Wheel Design', 'Durable'],
     sizes: ['Standard'],
     material: 'PVC & Steel',
-    images: ['https://picsum.photos/seed/wheel-382/800/600']
+    images: ['/products/track-wheel-382.jpg']
   },
   {
     id: 'track-wheel-sc',
@@ -818,7 +818,7 @@ export const PRODUCTS: Product[] = [
     features: ['Soft Close', 'Silent Operation', 'Double Wheel', 'Premium Quality'],
     sizes: ['Standard'],
     material: 'PVC & Steel',
-    images: ['https://picsum.photos/seed/wheel-sc/800/600']
+    images: ['/products/track-wheel-sc.jpg']
   },
   {
     id: 'door-slider-4w',
@@ -829,7 +829,7 @@ export const PRODUCTS: Product[] = [
     features: ['4 Wheel Design', 'High Quality', 'Smooth Action', 'Durable'],
     sizes: ['Standard'],
     material: 'Steel & PVC',
-    images: ['https://picsum.photos/seed/slider-4w/800/600']
+    images: ['/products/door-slider-4w.jpg']
   },
   {
     id: 'door-slider-8w',
@@ -840,7 +840,7 @@ export const PRODUCTS: Product[] = [
     features: ['8 Wheel Design', 'Heavy Duty', 'Ultra Smooth', 'Premium Quality'],
     sizes: ['Standard'],
     material: 'Steel & PVC',
-    images: ['https://picsum.photos/seed/slider-8w/800/600']
+    images: ['/products/door-slider-8w.jpg']
   },
   {
     id: 'oval-bracket-metal',
@@ -851,7 +851,7 @@ export const PRODUCTS: Product[] = [
     features: ['Metal Construction', 'Sturdy', 'Easy to Install', 'Sleek Finish'],
     sizes: ['Standard'],
     material: 'Metal',
-    images: ['https://picsum.photos/seed/bracket-metal/800/600']
+    images: ['/products/oval-bracket-metal.jpg']
   },
   {
     id: 'oval-pipe-steel',
@@ -862,7 +862,7 @@ export const PRODUCTS: Product[] = [
     features: ['Steel Construction', 'Durable', 'Rust Resistant', 'High Load Capacity'],
     sizes: ['Standard'],
     material: 'Steel',
-    images: ['https://picsum.photos/seed/pipe-steel/800/600']
+    images: ['/products/oval-pipe-steel.jpg']
   },
   {
     id: 'minifix-metal',
@@ -873,7 +873,7 @@ export const PRODUCTS: Product[] = [
     features: ['Strong Connection', 'Metal Construction', 'Easy Assembly', 'Durable'],
     sizes: ['Standard'],
     material: 'Metal',
-    images: ['https://picsum.photos/seed/minifix/800/600']
+    images: ['/products/minifix-metal.jpg']
   },
   {
     id: 'shelf-pin-acrylic',
@@ -884,7 +884,7 @@ export const PRODUCTS: Product[] = [
     features: ['Transparent', 'Sturdy', 'Easy to Install', 'Minimalist'],
     sizes: ['Standard'],
     material: 'Acrylic',
-    images: ['https://picsum.photos/seed/shelf-pin/800/600']
+    images: ['/products/shelf-pin-acrylic.jpg']
   },
   {
     id: 'ss-quodro-channel',
@@ -895,7 +895,7 @@ export const PRODUCTS: Product[] = [
     features: ['Stainless Steel', 'Soft Close', 'Under-mount Design', 'Smooth Operation'],
     sizes: ['18"', '20"', '22"', '24"'],
     material: 'Stainless Steel',
-    images: ['https://picsum.photos/seed/quodro-ss/800/600']
+    images: ['/products/ss-quodro-channel.jpg']
   },
   {
     id: 'quodro-channel',
@@ -906,7 +906,7 @@ export const PRODUCTS: Product[] = [
     features: ['Soft Close', 'Under-mount', 'Heavy Load Capacity', 'Durable'],
     sizes: ['18"', '20"', '22"', '24"'],
     material: 'Steel',
-    images: ['https://picsum.photos/seed/quodro/800/600']
+    images: ['/products/quodro-channel.jpg']
   },
   {
     id: 'kitchen-tandem-box',
@@ -917,7 +917,7 @@ export const PRODUCTS: Product[] = [
     features: ['Soft Close', 'Full Extension', 'High Load Capacity', 'Elegant Design'],
     sizes: ['4" - 500 MM'],
     material: 'Steel (White, Grey, Dark Grey)',
-    images: ['https://picsum.photos/seed/tandem/800/600'],
+    images: ['/products/kitchen-tandem-box.jpg'],
     specifications: {
       'Load Capacity': '35 KG / 50 KG',
       'Finish': 'Powder Coated',
@@ -933,7 +933,7 @@ export const PRODUCTS: Product[] = [
     features: ['Extra Stability', 'Increased Height', 'Soft Close', 'Modern Look'],
     sizes: ['6" - 500 MM'],
     material: 'Steel (White, Grey, Dark Grey)',
-    images: ['https://picsum.photos/seed/tandem-gallery/800/600']
+    images: ['/products/kitchen-tandem-box-single-gallery.jpg']
   },
   {
     id: 'swing-corner-decco',
@@ -944,7 +944,7 @@ export const PRODUCTS: Product[] = [
     features: ['Soft Close', 'Left/Right Handed', 'Maximum Space Utilization', 'Smooth Swing'],
     sizes: ['Standard'],
     material: 'Steel with Decco Finish',
-    images: ['https://picsum.photos/seed/swing-corner/800/600'],
+    images: ['/products/swing-corner-decco.jpg'],
     specifications: {
       'Mechanism': 'Soft Close Swing',
       'Tray Type': 'Anti-slip Decco',
@@ -960,7 +960,7 @@ export const PRODUCTS: Product[] = [
     features: ['Heavy Load Capacity', 'Smooth Operation', 'Durable Steel', 'Easy Installation'],
     sizes: ['900 MM (60 KG)', '1500 MM (125 KG)'],
     material: 'Steel',
-    images: ['https://picsum.photos/seed/bed-lift/800/600']
+    images: ['/products/bed-lift-manual.jpg']
   },
   {
     id: 'anti-skid-mat',
@@ -971,7 +971,7 @@ export const PRODUCTS: Product[] = [
     features: ['Anti-skid Surface', 'Easy to Cut', 'Washable', 'Protects Surfaces'],
     sizes: ['50 CM * 20 MTRSS'],
     material: 'PVC (Grey, White, Transparent)',
-    images: ['https://picsum.photos/seed/antiskid/800/600']
+    images: ['/products/anti-skid-mat.jpg']
   },
   {
     id: 'wastebin-auto-lid',
@@ -982,7 +982,7 @@ export const PRODUCTS: Product[] = [
     features: ['Auto Lid', 'Swing Mechanism', 'Easy to Clean', 'Compact Design'],
     sizes: ['8 LTR', '14 LTR'],
     material: 'Stainless Steel / Plastic',
-    images: ['https://picsum.photos/seed/wastebin/800/600']
+    images: ['/products/wastebin-auto-lid.jpg']
   },
   {
     id: 'rolling-shutter',
@@ -993,7 +993,7 @@ export const PRODUCTS: Product[] = [
     features: ['Smooth Operation', 'Space Saving', 'Modern Aesthetic', 'Durable Slats'],
     sizes: ['600 MM'],
     material: 'SS / PVC / Glass',
-    images: ['https://picsum.photos/seed/shutter/800/600']
+    images: ['/products/rolling-shutter.jpg']
   },
   {
     id: 'flap-lift-single',
@@ -1004,7 +1004,7 @@ export const PRODUCTS: Product[] = [
     features: ['Soft Close', 'Stay at any position', 'Easy Adjustment', 'Silent'],
     sizes: ['Standard'],
     material: 'Zinc Alloy / Steel',
-    images: ['https://picsum.photos/seed/flap-lift/800/600']
+    images: ['/products/flap-lift-single.jpg']
   },
   {
     id: 'wardrobe-cloth-lifter',
@@ -1015,7 +1015,7 @@ export const PRODUCTS: Product[] = [
     features: ['Ergonomic Design', 'High Load Capacity', 'Smooth Pull-down', 'Adjustable Width'],
     sizes: ['Aluminium 12 KG', 'Steel 15 KG'],
     material: 'Aluminium / Steel',
-    images: ['https://picsum.photos/seed/cloth-lifter/800/600']
+    images: ['/products/cloth-lifter.jpg']
   },
   {
     id: 'gas-lift-brass',
@@ -1026,7 +1026,7 @@ export const PRODUCTS: Product[] = [
     features: ['Brass Cylinder', 'Smooth Opening', 'Durable', 'Easy to Install'],
     sizes: ['8 KG', '10 KG', '12 KG', '15 KG', '25 KG', '30 KG', '60 KG'],
     material: 'Steel / Brass',
-    images: ['https://picsum.photos/seed/gas-lift/800/600']
+    images: ['/products/gas-lift-brass.jpg']
   },
   {
     id: 'furniture-leg-ss',
@@ -1037,7 +1037,7 @@ export const PRODUCTS: Product[] = [
     features: ['Adjustable Height', 'Stainless Steel', 'Heavy Duty', 'Rust Proof'],
     sizes: ['50*50', '50*80', '50*100', '50*120', '50*150 MM'],
     material: 'Stainless Steel',
-    images: ['https://picsum.photos/seed/leg-ss/800/600']
+    images: ['/products/furniture-leg-ss.jpg']
   },
   {
     id: 'cutlery-tray-pvc',
@@ -1048,7 +1048,7 @@ export const PRODUCTS: Product[] = [
     features: ['Multiple Compartments', 'Easy to Clean', 'Durable PVC', 'Fits Standard Drawers'],
     sizes: ['450 MM', '600 MM', '900 MM'],
     material: 'PVC (White, Grey)',
-    images: ['https://picsum.photos/seed/cutlery-pvc/800/600']
+    images: ['/products/cutlery-tray-pvc.jpg']
   },
   {
     id: 'oval-pipe-ss',
@@ -1059,7 +1059,7 @@ export const PRODUCTS: Product[] = [
     features: ['High Load Capacity', 'Rust Resistant', 'Elegant Shape', 'Durable'],
     sizes: ['Standard'],
     material: 'Iron / SS (Nickal Coated)',
-    images: ['https://picsum.photos/seed/oval-pipe/800/600']
+    images: ['/products/oval-pipe-ss.jpg']
   },
   {
     id: 'wooden-dowel',
@@ -1070,7 +1070,7 @@ export const PRODUCTS: Product[] = [
     features: ['Strong Joint', 'Natural Wood', 'Precise Dimensions', 'Easy to Use'],
     sizes: ['6*25', '8*40', '10*50'],
     material: 'Wood',
-    images: ['https://picsum.photos/seed/dowel/800/600']
+    images: ['/products/wooden-dowel.jpg']
   },
   {
     id: 'minifix-black-pvc',
@@ -1081,7 +1081,7 @@ export const PRODUCTS: Product[] = [
     features: ['Concealed Connection', 'Easy Assembly', 'Durable', 'Standard Fit'],
     sizes: ['6*40'],
     material: 'Steel / PVC',
-    images: ['https://picsum.photos/seed/minifix-pvc/800/600']
+    images: ['/products/minifix-black-pvc.jpg']
   },
   {
     id: 'shelf-l-button',
@@ -1092,7 +1092,7 @@ export const PRODUCTS: Product[] = [
     features: ['Sturdy Support', 'Easy to Install', 'Compact', 'Durable'],
     sizes: ['Small'],
     material: 'Zinc Alloy',
-    images: ['https://picsum.photos/seed/l-button/800/600']
+    images: ['/products/shelf-l-button.jpg']
   },
   {
     id: 'shelf-bullet-pin',
@@ -1103,7 +1103,7 @@ export const PRODUCTS: Product[] = [
     features: ['Sleek Design', 'Strong Support', 'Easy to Adjust', 'Standard Fit'],
     sizes: ['Standard'],
     material: 'Steel',
-    images: ['https://picsum.photos/seed/bullet-pin/800/600']
+    images: ['/products/shelf-bullet-pin.jpg']
   },
   {
     id: 'shelf-pin-chair',
@@ -1114,7 +1114,7 @@ export const PRODUCTS: Product[] = [
     features: ['Stable Support', 'Unique Shape', 'Easy to Install', 'Durable'],
     sizes: ['Standard'],
     material: 'Zinc Alloy',
-    images: ['https://picsum.photos/seed/chair-pin/800/600']
+    images: ['/products/shelf-pin-chair.jpg']
   },
   {
     id: 'grain-trolley-mechanism',
@@ -1125,7 +1125,7 @@ export const PRODUCTS: Product[] = [
     features: ['Heavy Load Capacity', 'Smooth Sliding', 'Stainless Steel', 'Height 14"'],
     sizes: ['15x20x14', '17x20x14', '19x20x14', '21x20x14'],
     material: '100% Stainless Steel',
-    images: ['https://picsum.photos/seed/grain-trolley/800/600'],
+    images: ['/products/grain-trolley-mechanism.jpg'],
     specifications: {
       'Height': '14 Inches',
       'Mechanism': 'Heavy Duty Slides',
@@ -1141,7 +1141,7 @@ export const PRODUCTS: Product[] = [
     features: ['Sturdy Construction', 'Easy to Install', 'Space Efficient', 'Durable'],
     sizes: ['10 Dia'],
     material: 'Stainless Steel',
-    images: ['https://picsum.photos/seed/bin-holder/800/600']
+    images: ['/products/bin-holder.jpg']
   },
   {
     id: 'detergent-holder',
@@ -1152,7 +1152,7 @@ export const PRODUCTS: Product[] = [
     features: ['Compact Design', 'Rust Proof', 'Easy to Mount', 'Organized Storage'],
     sizes: ['12x6x12'],
     material: 'Stainless Steel',
-    images: ['https://picsum.photos/seed/detergent-holder/800/600']
+    images: ['/products/detergent-holder.jpg']
   },
   {
     id: 'd-tray',
@@ -1163,7 +1163,7 @@ export const PRODUCTS: Product[] = [
     features: ['Rotating Design', 'Space Efficient', 'Stainless Steel Wire', 'Smooth Motion'],
     sizes: ['18 Dia', '21 Dia', '24 Dia', '27 Dia', '30 Dia'],
     material: 'Stainless Steel',
-    images: ['https://picsum.photos/seed/d-tray/800/600']
+    images: ['/products/d-tray.jpg']
   },
   {
     id: 'cylinder-trolley',
@@ -1174,7 +1174,7 @@ export const PRODUCTS: Product[] = [
     features: ['Heavy Duty Wheels', 'Strong Construction', 'Rust Proof', 'Easy Movement'],
     sizes: ['12 Dia'],
     material: 'Stainless Steel',
-    images: ['https://picsum.photos/seed/cylinder-trolley/800/600']
+    images: ['/products/cylinder-trolley.jpg']
   },
   {
     id: 'universal-magic-corner',
@@ -1185,7 +1185,7 @@ export const PRODUCTS: Product[] = [
     features: ['Universal Fit', 'Soft Close', 'Heavy Load', 'Maximum Access'],
     sizes: ['33x20x24'],
     material: 'Stainless Steel & Premium Mechanism',
-    images: ['https://picsum.photos/seed/universal-magic/800/600'],
+    images: ['/products/universal-magic-corner.jpg'],
     specifications: {
       'Mechanism': 'Soft Close',
       'Cabinet Width': '900-1050 MM',
@@ -1201,7 +1201,7 @@ export const TESTIMONIALS: Testimonial[] = [
     role: 'Authorized Dealer, Ahmedabad',
     content: 'The quality of KELLEN products is unmatched. The SS 304 grade steel they use is truly rust-proof, which makes my customers very happy.',
     rating: 5,
-    image: 'https://picsum.photos/seed/person1/100/100'
+    image: '/products/plain-basket.jpg'
   },
   {
     id: 't2',
@@ -1209,7 +1209,7 @@ export const TESTIMONIALS: Testimonial[] = [
     role: 'Interior Designer',
     content: 'I always recommend Stylex Industries to my clients for their modular kitchens. Their mechanisms are smooth and the range is very comprehensive.',
     rating: 5,
-    image: 'https://picsum.photos/seed/person2/100/100'
+    image: '/products/magic-corner.jpg'
   }
 ];
 
