@@ -13,7 +13,7 @@ export interface Product {
   id: string;
   name: string;
   slug: string;
-  category: 'kitchen-accessories' | 'wardrobe-accessories' | 'hardware-hinges' | 'storage-systems';
+  category: 'kitchen-accessories' | 'wardrobe-accessories' | 'hardware-hinges' | 'storage-systems' | 'miscellaneous-accessories';
   description: string;
   features: string[];
   sizes: string[];

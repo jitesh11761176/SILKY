@@ -61,7 +61,7 @@ const Header = () => {
             <div className="flex items-center space-x-4">
               <Link to="/catalogue" className="flex items-center space-x-2 text-zinc-600 hover:text-zinc-900 transition-colors text-sm font-bold">
                 <Download size={18} />
-                <span>Catalogue</span>
+                <span>Download Product Catalogue</span>
               </Link>
               <Link 
                 to="/become-dealer" 

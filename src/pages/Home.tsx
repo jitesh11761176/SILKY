@@ -79,18 +79,24 @@ const Home = () => {
         </div>
       </Section>
 
-      {/* Why Stylex Industries */}
+      {/* Manufactured by Stylex Industries */}
       <Section 
-        title="Why Stylex Industries" 
+        title="Manufactured by Stylex Industries" 
         subtitle="The Manufacturer Advantage"
         centered
       >
+        <div className="max-w-4xl mx-auto text-center mb-16">
+          <p className="text-zinc-600 text-lg leading-relaxed">
+            Stylex Industries is the manufacturer of <span className="font-bold text-zinc-900">{BRAND_NAME}</span> stainless steel modular kitchen and wardrobe accessories. 
+            Our products are manufactured using high-grade stainless steel, precision engineering, and advanced production techniques to ensure the highest quality standards and long product durability.
+          </p>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {[
-            { icon: Factory, title: `Manufacturer of ${BRAND_NAME} brand`, desc: `Direct manufacturer supply ensuring quality and consistency.` },
-            { icon: ShieldCheck, title: '100% Stainless Steel', desc: 'High-grade austenitic steel for lifetime durability.' },
-            { icon: Award, title: 'Rust Proof Products', desc: 'Hygienic and resistant to harsh kitchen environments.' },
-            { icon: Settings, title: 'Long Durability', desc: 'Precision engineered for smooth operation and long life.' }
+            { icon: ShieldCheck, title: '100% Stainless Steel', desc: 'High-grade austenitic steel for lifetime durability and hygiene.' },
+            { icon: ShieldCheck, title: 'Rust Proof', desc: 'Hygienically tested and resistant to harsh kitchen environments.' },
+            { icon: Settings, title: 'Precision Engineering', desc: 'Advanced manufacturing for silent and smooth operation.' },
+            { icon: Award, title: 'Long Durability', desc: 'Built to last with 10 years warranty on manufacturing defects.' }
           ].map((feature, i) => (
             <div key={i} className="text-center space-y-4 p-6 rounded-2xl hover:bg-zinc-50 transition-colors border border-transparent hover:border-zinc-100">
               <div className="w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mx-auto">
