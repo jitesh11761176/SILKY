@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Facebook, Instagram, Twitter, Mail, Phone, MapPin, MessageCircle, Globe } from 'lucide-react';
+import { Facebook, Instagram, Twitter, Mail, Phone, MapPin, MessageCircle, Globe, Download } from 'lucide-react';
 import { WHATSAPP_NUMBER, WHATSAPP_MESSAGE, BRAND_NAME, COMPANY_NAME, EMAIL, WEBSITE } from '../constants';
 
 const Footer = () => {
@@ -39,6 +39,12 @@ const Footer = () => {
               <li><Link to="/products" className="hover:text-white transition-colors">Products</Link></li>
               <li><Link to="/catalogue" className="hover:text-white transition-colors">Download Product Catalogue</Link></li>
               <li><Link to="/become-dealer" className="hover:text-white transition-colors">Become a Dealer</Link></li>
+              <li className="pt-2">
+                <Link to="/catalogue" className="btn-primary !py-2 !px-4 text-xs inline-flex items-center">
+                  <Download size={14} className="mr-2" />
+                  <span>Download Catalogue</span>
+                </Link>
+              </li>
             </ul>
           </div>
 

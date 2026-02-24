@@ -867,6 +867,28 @@ export const PRODUCTS: Product[] = [
     sizes: ['Standard'],
     material: 'Acrylic',
     images: ['https://picsum.photos/seed/shelf-pin/800/600']
+  },
+  {
+    id: 'ss-quodro-channel',
+    name: 'SS Quodro Channel Soft Close',
+    slug: 'ss-quodro-channel',
+    category: 'hardware-hinges',
+    description: 'Premium stainless steel under-mount drawer channels with soft-close mechanism.',
+    features: ['Stainless Steel', 'Soft Close', 'Under-mount Design', 'Smooth Operation'],
+    sizes: ['18"', '20"', '22"', '24"'],
+    material: 'Stainless Steel',
+    images: ['https://picsum.photos/seed/quodro-ss/800/600']
+  },
+  {
+    id: 'quodro-channel',
+    name: 'Quodro Channel Soft Close',
+    slug: 'quodro-channel',
+    category: 'hardware-hinges',
+    description: 'High-quality under-mount drawer channels for smooth and silent drawer movement.',
+    features: ['Soft Close', 'Under-mount', 'Heavy Load Capacity', 'Durable'],
+    sizes: ['18"', '20"', '22"', '24"'],
+    material: 'Steel',
+    images: ['https://picsum.photos/seed/quodro/800/600']
   }
 ];
 

@@ -79,9 +79,9 @@ const Home = () => {
         </div>
       </Section>
 
-      {/* Manufactured by Stylex Industries */}
+      {/* Manufacturing Excellence at Stylex Industries */}
       <Section 
-        title="Manufactured by Stylex Industries" 
+        title="Manufacturing Excellence at Stylex Industries" 
         subtitle="The Manufacturer Advantage"
         centered
       >
