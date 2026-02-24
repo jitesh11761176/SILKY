@@ -79,6 +79,50 @@ const Home = () => {
         </div>
       </Section>
 
+      {/* Services Section */}
+      <Section 
+        title="Our Services" 
+        subtitle="Manufacturing Expertise"
+        centered
+      >
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {[
+            {
+              title: 'Modular Kitchen Solutions',
+              desc: 'Premium stainless steel accessories for modern kitchens.',
+              image: '/products/plain-basket.jpg',
+              link: '/services/kitchen'
+            },
+            {
+              title: 'Wardrobe Storage Solutions',
+              desc: 'Functional and elegant wardrobe organization systems.',
+              image: '/products/wardrobe-pullout.jpg',
+              link: '/services/wardrobe'
+            }
+          ].map((service) => (
+            <Link 
+              key={service.title} 
+              to={service.link}
+              className="group relative h-[400px] rounded-[2.5rem] overflow-hidden shadow-xl"
+            >
+              <img 
+                src={service.image} 
+                alt={service.title} 
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/40 to-transparent"></div>
+              <div className="absolute bottom-10 left-10 right-10">
+                <h4 className="text-3xl font-display font-black text-white mb-2">{service.title}</h4>
+                <p className="text-zinc-200 mb-6">{service.desc}</p>
+                <span className="inline-flex items-center bg-white text-zinc-900 px-6 py-3 rounded-xl font-bold group-hover:bg-blue-600 group-hover:text-white transition-all">
+                  Learn More <ArrowRight size={18} className="ml-2" />
+                </span>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </Section>
+
       {/* Manufacturing Excellence at Stylex Industries */}
       <Section 
         title="Manufacturing Excellence at Stylex Industries" 

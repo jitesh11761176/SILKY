@@ -2,9 +2,11 @@ import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import WhatsAppButton from './components/WhatsAppButton';
 import Home from './pages/Home';
 import About from './pages/About';
+import Services from './pages/Services';
+import KitchenServices from './pages/services/Kitchen';
+import WardrobeServices from './pages/services/Wardrobe';
 import Products from './pages/Products';
 import ProductDetail from './pages/ProductDetail';
 import Contact from './pages/Contact';
@@ -30,6 +32,9 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/services/kitchen" element={<KitchenServices />} />
+            <Route path="/services/wardrobe" element={<WardrobeServices />} />
             <Route path="/products" element={<Products />} />
             <Route path="/products/:slug" element={<ProductDetail />} />
             <Route path="/dealer" element={<BecomeDealer />} />
@@ -39,7 +44,6 @@ export default function App() {
           </Routes>
         </main>
         <Footer />
-        <WhatsAppButton />
       </div>
     </Router>
   );
